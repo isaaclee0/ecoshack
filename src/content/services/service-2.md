@@ -1,17 +1,17 @@
 ---
-title: "Home Decoration"
-meta_title: ""
-description: "Efficient use of space is crucial in home interior design. Consider the layout of furniture."
+title: "Studios & Workshops"
+meta_title: "Custom Studios & Workshops - Eco Shack"
+description: "Purpose-built creative spaces for artists, craftspeople, and hobbyists. Designed for optimal lighting, ventilation, and workflow."
 date: 2025-05-06T05:00:00Z
 image: "/images/services/service-2.png"
-categories: ["office"]
+categories: ["creative"]
 featured_in_homepage: true
 features:
-  - name: "Ergonomic design solutions"
-    description: "Once construction is complete, the designer/architect conducts a final inspection of the project."
-  - name: "Custom and cabinetry design"
-    description: "Once construction is complete, the designer/architect conducts a final inspection of the project."
-  - name: "Workplace wellness design"
-    description: "Once construction is complete, the designer/architect conducts a final inspection of the project."
+  - name: "Natural lighting design"
+    description: "Strategically placed windows and skylights to maximise natural light for creative work."
+  - name: "Heavy-duty flooring"
+    description: "Reinforced concrete or timber flooring designed to handle heavy equipment and machinery."
+  - name: "Ventilation systems"
+    description: "Professional ventilation and dust extraction systems for safe working environments."
 draft: false
 ---

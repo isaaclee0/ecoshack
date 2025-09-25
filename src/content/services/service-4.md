@@ -1,17 +1,17 @@
 ---
-title: "Office Space Interior"
-meta_title: ""
-description: "Efficient use of space is crucial in home interior design. Consider the layout of furniture."
+title: "Home Offices"
+meta_title: "Custom Home Offices - Eco Shack"
+description: "Dedicated workspace solutions for remote work and business. Quiet, comfortable, and professionally designed environments."
 date: 2025-05-06T05:00:00Z
-image: "/images/services/service-1.png"
+image: "/images/services/service-4.png"
 categories: ["office"]
 featured_in_homepage: true
 features:
-  - name: "Ergonomic design solutions"
-    description: "Once construction is complete, the designer/architect conducts a final inspection of the project."
-  - name: "Custom and cabinetry design"
-    description: "Once construction is complete, the designer/architect conducts a final inspection of the project."
-  - name: "Workplace wellness design"
-    description: "Once construction is complete, the designer/architect conducts a final inspection of the project."
+  - name: "Acoustic insulation"
+    description: "Sound-dampening materials and design to create a quiet, professional workspace."
+  - name: "Climate control"
+    description: "Heating, cooling, and ventilation systems for year-round comfort and productivity."
+  - name: "Technology integration"
+    description: "Built-in cable management, power outlets, and high-speed internet connectivity."
 draft: false
 ---

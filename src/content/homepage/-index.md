@@ -1,73 +1,73 @@
 ---
 # Banner
 banner:
-  title: "Elevating Spaces Crafting Dreams"
-  content: "We specialize in transforming visions into reality. Explore our work of innovative architectural."
-  image: "/images/banner.png"
-  spinning_text: "• BEST INTERIOR FIRM SINCE 1992"
+  title: "Need a shack?"
+  content: "We create spare rooms, bedrooms, sheds, studios, shelters, and everything in between."
+  image: "/images/banner.jpg"
+  spinning_text: "• AUSTRALIA'S TRUSTED SHACK BUILDERS"
   button:
     enable: true
-    label: "Book an appointment"
+    label: "Get a Quote"
     link: "/contact"
 
 # Gallery
 gallery:
   enable: true
-  title: Architecture Interior.
-  subtitle: ABOUT us
-  description: We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision.
+  title: Custom Shack Designs.
+  subtitle: OUR WORK
+  description: We specialise in building custom shacks, studios, spare rooms, and outdoor structures. Explore our portfolio of quality craftsmanship and innovative designs.
   images:
-    - "/images/gallery/1.png"
-    - "/images/gallery/2.png"
-    - "/images/gallery/3.png"
-    - "/images/gallery/4.png"
-    - "/images/gallery/1.png"
-    - "/images/gallery/2.png"
-    - "/images/gallery/3.png"
-    - "/images/gallery/4.png"
-    - "/images/gallery/1.png"
-    - "/images/gallery/2.png"
-    - "/images/gallery/3.png"
-    - "/images/gallery/4.png"
-    - "/images/gallery/1.png"
-    - "/images/gallery/2.png"
-    - "/images/gallery/3.png"
-    - "/images/gallery/4.png"
+    - "/images/gallery/1.jpg"
+    - "/images/gallery/2.jpg"
+    - "/images/gallery/3.jpg"
+    - "/images/gallery/4.jpg"
+    - "/images/gallery/5.jpg"
+    - "/images/gallery/6.jpg"
+    - "/images/gallery/7.jpg"
+    - "/images/gallery/8.jpg"
+    - "/images/gallery/9.jpg"
+    - "/images/gallery/10.jpg"
+    - "/images/gallery/11.jpg"
+    - "/images/gallery/1.jpg"
+    - "/images/gallery/2.jpg"
+    - "/images/gallery/3.jpg"
+    - "/images/gallery/4.jpg"
+    - "/images/gallery/5.jpg"
 
 # Fun Facts
 fun_facts:
   enable: true
-  title: "Since our founding, Kindora has made an extensive impact"
-  description: ""
+  title: "Building quality outdoor structures across Australia"
+  description: "From concept to completion, we deliver exceptional results that exceed expectations."
   metrics:
-    - name: "Interior Projects"
-      description: "Designs we have finished in last 32 years."
+    - name: "Shacks Built"
+      description: "Custom structures delivered to satisfied customers."
       counter:
-        count: "8"
-        count_suffix: "K"
+        count: "150"
+        count_suffix: "+"
         count_prefix: ""
         count_duration: 3
 
-    - name: "Years of Works"
-      description: "Designs we have finished in last 32 years."
+    - name: "Years Experience"
+      description: "Trusted expertise in outdoor construction."
       counter:
-        count: "31"
+        count: "8"
         count_suffix: ""
         count_prefix: ""
         count_duration: 0.5
 
-    - name: "Satisfied Clients"
-      description: "Designs we have finished in last 32 years."
+    - name: "Happy Customers"
+      description: "Families enjoying their new outdoor spaces."
       counter:
-        count: "12"
-        count_suffix: "K"
+        count: "140"
+        count_suffix: "+"
         count_prefix: ""
         count_duration: 3.5
 
-    - name: "Happy Rate"
-      description: "Designs we have finished in last 32 years."
+    - name: "Satisfaction Rate"
+      description: "Customer satisfaction with our work."
       counter:
-        count: "97"
+        count: "98"
         count_suffix: "%"
         count_prefix: ""
         count_duration: 4
@@ -75,7 +75,7 @@ fun_facts:
 # Services Section
 services:
   enable: true
-  title: "Get your dream home with expert help."
+  title: "Transform your backyard with a custom-built shack."
   subtitle: "SERVICES"
   button:
     enable: true
@@ -86,25 +86,25 @@ services:
 # Services Facts Section
 services_facts:
   enable: true
-  title: "SERVICES"
-  subtitle: "Our Working Process"
+  title: "PROCESS"
+  subtitle: "How We Work"
   metrics:
-    - name: "Initial Consultation"
-      description: "The process often begins with an initial consultation between the designer/architect. Get started from here."
-    - name: "Concept Development"
-      description: "The process often begins with an initial consultation between the designer/architect. Get started from here."
-    - name: "Design Development"
-      description: "The process often begins with an initial consultation between the designer/architect. Get started from here."
-    - name: "Permitting & Approvals"
-      description: "The process often begins with an initial consultation between the designer/architect. Get started from here."
-    - name: "Project Closeout"
-      description: "The process often begins with an initial consultation between the designer/architect. Get started from here."
+    - name: "Free Consultation"
+      description: "We start with a free on-site consultation to understand your needs and assess your space."
+    - name: "Custom Design"
+      description: "Our team creates a tailored design that maximises your space and meets your specific requirements."
+    - name: "Council Approval"
+      description: "We handle all necessary permits and council approvals to ensure your project meets local regulations."
+    - name: "Quality Construction"
+      description: "Using premium materials and expert craftsmanship, we build your shack to the highest standards."
+    - name: "Final Handover"
+      description: "We complete a thorough inspection and hand over your finished shack, ready for immediate use."
 
 # Projects Section
 projects:
   enable: true
-  title: "Our Projects & Designs"
-  subtitle: "WORKS"
+  title: "Recent Projects & Builds"
+  subtitle: "PORTFOLIO"
   button:
     enable: true
     label: "View All Projects"

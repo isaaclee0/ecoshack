@@ -1,17 +1,17 @@
 ---
-title: "Hospitality Decor"
-meta_title: ""
-description: "Efficient use of space is crucial in home interior design. Consider the layout of furniture."
+title: "Shelters & Outdoor Structures"
+meta_title: "Custom Shelters & Outdoor Structures - Eco Shack"
+description: "Weather protection and outdoor living solutions including pergolas, gazebos, carports, and custom shelters."
 date: 2025-05-06T05:00:00Z
-image: "/images/services/service-3.png"
-categories: ["office"]
+image: "/images/services/service-5.png"
+categories: ["outdoor"]
 featured_in_homepage: false
 features:
-  - name: "Ergonomic design solutions"
-    description: "Once construction is complete, the designer/architect conducts a final inspection of the project."
-  - name: "Custom and cabinetry design"
-    description: "Once construction is complete, the designer/architect conducts a final inspection of the project."
-  - name: "Workplace wellness design"
-    description: "Once construction is complete, the designer/architect conducts a final inspection of the project."
+  - name: "Weather protection"
+    description: "Robust construction designed to withstand Australian weather conditions and UV exposure."
+  - name: "Versatile designs"
+    description: "From simple carports to elaborate outdoor entertaining areas with custom features."
+  - name: "Low maintenance"
+    description: "Quality materials and finishes that require minimal upkeep over the years."
 draft: false
 ---

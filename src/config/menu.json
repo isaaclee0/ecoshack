@@ -1,83 +1,19 @@
 {
   "main": [
     {
-      "name": "All Pages",
-      "url": "",
-      "hasMegamenu": true,
-      "image": "/images/menu.png",
-      "children": [
-        {
-          "children": [
-            {
-              "name": "Homepage",
-              "url": "/"
-            },
-            {
-              "name": "About",
-              "url": "/about"
-            },
-            {
-              "name": "Terms",
-              "url": "/terms-and-conditions"
-            },
-            {
-              "name": "Services",
-              "url": "/services"
-            },
-            {
-              "name": "Blog",
-              "url": "/blog"
-            },
-            {
-              "name": "Privacy",
-              "url": "/privacy-policy"
-            },
-            {
-              "name": "Reviews",
-              "url": "/reviews"
-            },
-            {
-              "name": "Blog Details",
-              "url": "/blog/post-1"
-            },
-            {
-              "name": "FAQs",
-              "url": "/faqs"
-            },
-            {
-              "name": "Projects",
-              "url": "/projects"
-            },
-            {
-              "name": "Gallery",
-              "url": "/gallery"
-            },
-            {
-              "name": "Contact",
-              "url": "/contact"
-            },
-            {
-              "name": "Project Details",
-              "url": "/projects/project-1"
-            },
-            {
-              "name": "Career",
-              "url": "/career"
-            },
-            {
-              "name": "Elements",
-              "url": "/elements"
-            },
-            {
-              "name": "404",
-              "url": "/404"
-            }
-          ]
-        }
-      ]
+      "name": "About",
+      "url": "/about"
     },
     {
-      "name": "Works",
+      "name": "Services",
+      "url": "/services"
+    },
+    {
+      "name": "Gallery",
+      "url": "/gallery"
+    },
+    {
+      "name": "Projects",
       "url": "/projects"
     },
     {
@@ -87,36 +23,40 @@
   ],
   "footer": [
     {
-      "title": "Quick Links",
+      "title": "Our Services",
       "children": [
         {
-          "name": "Projects",
-          "url": "/projects"
+          "name": "Spare Rooms & Bedrooms",
+          "url": "/services"
         },
         {
-          "name": "About Us",
-          "url": "/about"
+          "name": "Studios & Workshops",
+          "url": "/services"
         },
         {
-          "name": "Contact",
-          "url": "/contact"
+          "name": "Storage Sheds",
+          "url": "/services"
         },
         {
-          "name": "Career",
-          "url": "/career"
+          "name": "Home Offices",
+          "url": "/services"
         }
       ]
     },
     {
-      "title": "Legal & Policy Links",
+      "title": "Company",
       "children": [
         {
-          "name": "Privacy Policy",
-          "url": "/privacy-policy"
+          "name": "About Eco Shack",
+          "url": "/about"
         },
         {
-          "name": "Terms of Service",
-          "url": "/terms-and-conditions"
+          "name": "Our Projects",
+          "url": "/projects"
+        },
+        {
+          "name": "Gallery",
+          "url": "/gallery"
         },
         {
           "name": "Contact Us",

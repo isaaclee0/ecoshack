@@ -1,15 +1,15 @@
 {
   "site": {
-    "title": "NextSpace - Architecture &amp; Interior Firm Astro Template",
-    "base_url": "https://nextspace-astro.vercel.app",
+    "title": "Eco Shack - Custom Outdoor Structures",
+    "base_url": "https://ecoshack.com.au",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.svg",
-    "logo_footer": "/images/logo-footer.svg",
+    "logo_footer": "/images/logo.svg",
     "logo_width": "200",
     "logo_height": "40",
-    "logo_text": "NextSpace"
+    "logo_text": "Eco Shack"
   },
 
   "settings": {
@@ -18,17 +18,17 @@
 
   "params": {
     "contact_form_action": "#",
-    "address": "123 Main Street, New York, NY 10001",
-    "phone": "123-456-7890",
-    "email": "info@nextspace.com",
-    "footer_title": "Ready To Build Your Dream Project?",
-    "footer_content": "Develops conceptual design ideas, refines them into detailed plans."
+    "address": "Melbourne, Victoria, Australia",
+    "phone": "1300 ECO SHACK",
+    "email": "info@ecoshack.com.au",
+    "footer_title": "Ready to Build Your Dream Structure?",
+    "footer_content": "From spare rooms to studios, we create custom outdoor buildings that enhance your property and lifestyle."
   },
 
   "navigation_button": {
     "enable": true,
-    "label": "Get This Template",
-    "link": "https://themefisher.com/products/nextspace-astro"
+    "label": "Get Quote",
+    "link": "/contact"
   },
 
   "footer_button": {
@@ -43,8 +43,8 @@
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "Eco Shack",
     "meta_image": "/images/og-image.png",
-    "meta_description": "NextSpace - Architecture &amp; Interior Firm Astro Template"
+    "meta_description": "Eco Shack creates custom outdoor structures including spare rooms, bedrooms, sheds, studios, and shelters across Australia."
   }
 }
