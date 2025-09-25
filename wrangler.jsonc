@@ -1,5 +1,5 @@
 {
-  "name": "ecoshack-website",
+  "name": "ecoshack-astro-website",
   "compatibility_date": "2025-09-25",
   "assets": {
     "directory": "./dist"
