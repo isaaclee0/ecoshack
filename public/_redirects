@@ -1,5 +1,5 @@
 # Redirect trailing slashes based on config
 # This will be handled by Astro's trailingSlash config
 
-# 404 fallback
-/* /404.html 404
+# 404 fallback - serve 404.html for unmatched routes
+/* /404.html 200
