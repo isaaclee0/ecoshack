@@ -1,6 +1,7 @@
 {
-  "name": "ecoshack-website",
+  "name": "ecoshack-astro-website",
   "compatibility_date": "2025-09-25",
+  "preview_urls": false,
   "assets": {
     "directory": "./dist"
   }
