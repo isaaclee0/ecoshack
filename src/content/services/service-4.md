@@ -3,7 +3,7 @@ title: "Home Offices"
 meta_title: "Custom Home Offices - Eco Shack"
 description: "Dedicated workspace solutions for remote work and business. Quiet, comfortable, and professionally designed environments."
 date: 2025-05-06T05:00:00Z
-image: "/images/services/service-4.png"
+image: "/images/services/service-1.png"
 categories: ["office"]
 featured_in_homepage: true
 features:

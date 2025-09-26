@@ -1,17 +1,20 @@
 ---
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { humanize } from "@/lib/utils/textConverter";
+import bgImageMod from "@/lib/utils/bgImageMod";
 
 const { title = "" }: { title?: string } = Astro.props;
 
 const isContactPage = Astro.url.pathname === "/contact";
+const optimizedBannerImage = await bgImageMod("/images/banner.jpg", "avif", 90);
 ---
 
 <section>
   <div class="text-center">
     <div
 
-      class={`${isContactPage ? "h-[400px] lg:h-[650px]" : "pt-[240px] pb-[140px]"} bg-[url(/images/page-header.png)] bg-cover bg-bottom bg-no-repeat`}
+      class={`${isContactPage ? "h-[400px] lg:h-[650px]" : "pt-[240px] pb-[140px]"} bg-cover bg-bottom bg-no-repeat`}
+      style={`background-image: url(${optimizedBannerImage})`}
     >
     {
       !isContactPage && (

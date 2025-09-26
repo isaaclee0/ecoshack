@@ -16,7 +16,7 @@ import { ClientRouter } from "astro:transitions";
 // font families
 const pf = theme.fonts.font_family.primary;
 
-let fontPrimary;
+let fontPrimary: string = "";
 if (theme.fonts.font_family.primary) {
   fontPrimary = theme.fonts.font_family.primary
     .replace(/\+/g, " ")
@@ -72,7 +72,7 @@ const { title, meta_title, description, image, noindex, canonical } =
           src: [],
           preload: false,
           display: "swap",
-          name: fontPrimary!,
+          name: fontPrimary || "Inter",
           fallback: "sans-serif",
           cssVariable: "font-primary",
           googleFontsURL: `https://fonts.googleapis.com/css2?family=${pf}&display=swap`,
@@ -85,6 +85,31 @@ const { title, meta_title, description, image, noindex, canonical } =
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=5"
     />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/images/logo.svg" as="image" type="image/svg+xml" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Custom domain optimization -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
+    <!-- HTTPS enforcement -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <script>
+      // Force HTTPS redirect if loaded over HTTP - immediate execution
+      (function() {
+        if (location.protocol !== 'https:' && 
+            location.hostname !== 'localhost' && 
+            location.hostname !== '127.0.0.1' &&
+            !location.hostname.includes('workers.dev')) {
+          // Use replace to avoid back button issues
+          location.replace(location.href.replace('http:', 'https:'));
+        }
+      })();
+    </script>
 
     <!-- title -->
     <title>
@@ -178,6 +203,12 @@ const { title, meta_title, description, image, noindex, canonical } =
       <slot />
     </main>
     <Footer />
+    
+    <!-- Loading indicator for page transitions -->
+    <div id="loading-indicator" class="fixed inset-0 bg-white z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-200">
+      <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+    </div>
+    
     <script>
       // AOS init
       import AOS from "aos";
@@ -212,13 +243,70 @@ const { title, meta_title, description, image, noindex, canonical } =
         });
       }
 
+      function showLoading() {
+        const loader = document.getElementById('loading-indicator');
+        if (loader) {
+          loader.style.opacity = '1';
+          loader.style.pointerEvents = 'auto';
+        }
+      }
+
+      function hideLoading() {
+        const loader = document.getElementById('loading-indicator');
+        if (loader) {
+          loader.style.opacity = '0';
+          loader.style.pointerEvents = 'none';
+        }
+      }
+
+      // Check if we're on a custom domain and handle differently
+      function isCustomDomain() {
+        return !window.location.hostname.includes('workers.dev');
+      }
+
+      // Enhanced navigation handling for custom domains
+      function handleCustomDomainNavigation() {
+        if (isCustomDomain()) {
+          // Add a small delay for custom domains to ensure proper loading
+          const links = document.querySelectorAll('a[href^="/"]');
+          links.forEach(link => {
+            link.addEventListener('click', (e) => {
+              showLoading();
+              // Small delay to ensure smooth transition on custom domains
+              setTimeout(() => {
+                if (!e.defaultPrevented) {
+                  hideLoading();
+                }
+              }, 100);
+            });
+          });
+        }
+      }
+
+      // Handle page transitions
+      document.addEventListener("astro:before-preparation", () => {
+        showLoading();
+      });
+
       document.addEventListener("astro:page-load", () => {
+        hideLoading();
         scriptInit();
         aosInit();
+        handleCustomDomainNavigation();
       });
 
       document.addEventListener("astro:after-swap", () => {
+        hideLoading();
         aosInit();
+        handleCustomDomainNavigation();
+      });
+
+      // Initial page load
+      document.addEventListener("DOMContentLoaded", () => {
+        hideLoading();
+        scriptInit();
+        aosInit();
+        handleCustomDomainNavigation();
       });
     </script>
   </body>

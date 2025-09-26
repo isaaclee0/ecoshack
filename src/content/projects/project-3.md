@@ -3,7 +3,7 @@ title: "Home Corner Interior"
 meta_title: ""
 description: "Efficient use of space is crucial in home interior design. Consider the layout of furniture."
 date: 2025-05-07T05:00:00Z
-image: "/images/projects/3.png"
+image: "/images/gallery/11.jpg"
 featured_in_homepage: true
 client_name: "Creative Structures"
 project_type: "Architecture Plan"

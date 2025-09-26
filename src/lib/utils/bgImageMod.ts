@@ -3,6 +3,7 @@ import { getImage } from "astro:assets";
 const bgImageMod = async (
   src: string,
   format?: "auto" | "avif" | "jpeg" | "png" | "svg" | "webp",
+  quality?: number,
 ) => {
   src = `/public${src}`;
   const images = import.meta.glob("/public/images/**/*.{jpeg,jpg,png,gif}");
@@ -32,7 +33,8 @@ const bgImageMod = async (
   // Optimize the image for development
   const ImageMod = await getImage({
     src: image.default,
-    format: format,
+    format: format || "avif",
+    quality: quality || 80,
   });
 
   return ImageMod.src;

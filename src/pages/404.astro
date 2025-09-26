@@ -1,12 +1,16 @@
 ---
 import Button from "@/components/Button.astro";
 import Base from "@/layouts/Base.astro";
+import bgImageMod from "@/lib/utils/bgImageMod";
+
+const optimizedBannerImage = await bgImageMod("/images/banner.jpg", "avif", 90);
 ---
 
 <Base title="Page Not Found">
   <section class="relative pt-[260px] pb-[160px] text-center overflow-hidden">
     <div
-      class="absolute inset-0 bg-[url(/images/page-header.png)] bg-cover bg-center grayscale-[100%] z-0"
+      class="absolute inset-0 bg-cover bg-center grayscale-[100%] z-0"
+      style={`background-image: url(${optimizedBannerImage})`}
       aria-hidden="true"
     >
     </div>

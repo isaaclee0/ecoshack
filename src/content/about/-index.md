@@ -2,14 +2,14 @@
 title: "About Eco Shack"
 meta_title: "About Eco Shack - Custom Outdoor Structures"
 description: "At Eco Shack, we're passionate about creating exceptional outdoor structures that transform your backyard into functional living spaces."
-image: "/images/about/1.png"
+image: "/images/gallery/3.jpg"
 images_gallery:
-  - "/images/about/1.png"
-  - "/images/about/2.png"
-  - "/images/about/3.png"
-  - "/images/about/4.png"
-  - "/images/about/5.png"
-  - "/images/about/6.png"
+  - "/images/gallery/3.jpg"
+  - "/images/gallery/4.jpg"
+  - "/images/gallery/5.jpg"
+  - "/images/gallery/6.jpg"
+  - "/images/gallery/7.jpg"
+  - "/images/gallery/8.jpg"
 
 blog_section:
   enable: true

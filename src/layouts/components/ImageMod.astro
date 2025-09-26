@@ -11,8 +11,11 @@ interface Props {
   loading?: "eager" | "lazy" | null | undefined;
   decoding?: "async" | "auto" | "sync" | null | undefined;
   format?: "auto" | "avif" | "jpeg" | "png" | "svg" | "webp";
+  quality?: number;
   class?: string;
   style?: any;
+  widths?: number[];
+  sizes?: string;
 }
 
 // Destructuring Astro.props to get the component's props
@@ -24,14 +27,17 @@ let {
   loading,
   decoding,
   class: className,
-  format,
+  format = "avif",
+  quality = 80,
   style,
+  widths,
+  sizes,
 } = Astro.props;
 
 src = `/public${src}`;
 
 // Glob pattern to load images from the /public/images folder
-const images = import.meta.glob("/public/images/**/*.{jpeg,jpg,png,gif,svg}");
+const images = import.meta.glob("/public/images/**/*.{jpeg,jpg,png,gif,svg}") as Record<string, () => Promise<{ default: ImageMetadata }>>;
 
 // Check if the source path is valid
 const isValidPath = images[src] ? true : false;
@@ -54,7 +60,10 @@ const isValidPath = images[src] ? true : false;
       decoding={decoding}
       class={className}
       format={format}
+      quality={quality}
       style={style}
+      widths={widths}
+      sizes={sizes}
     />
   )
 }

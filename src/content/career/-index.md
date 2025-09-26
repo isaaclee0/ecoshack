@@ -2,7 +2,7 @@
 title: "Interested in working with us!"
 meta_title: "Career"
 description: "We encourage our team to fearlessly challenge conventions and pioneer new paths."
-image: "/images/contact.png"
+image: "/images/gallery/2.jpg"
 
 available_jobs:
   title: "Open Opportunities"

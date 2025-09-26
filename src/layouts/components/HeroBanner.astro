@@ -1,14 +1,16 @@
 ---
 import { markdownify } from "@/lib/utils/textConverter";
+import bgImageMod from "@/lib/utils/bgImageMod";
 import Button from "./Button.astro";
 
 const { banner } = Astro.props;
+const optimizedBannerImage = await bgImageMod(banner.image, "avif", 90);
 ---
 
 <!-- bg-[url(/images/banner.png)] -->
 <section
   class="section relative bg-cover bg-center md:h-[calc(65svh)] lg:h-[calc(100svh_-_28px)]"
-  style={`background-image: url(${banner.image})`}
+  style={`background-image: url(${optimizedBannerImage})`}
 >
   <!-- Black overlay for better text readability -->
   <div class="absolute inset-0 bg-black/25 z-10"></div>

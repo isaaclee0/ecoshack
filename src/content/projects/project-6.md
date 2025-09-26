@@ -3,7 +3,7 @@ title: "Titan Office Interior"
 meta_title: ""
 description: "Efficient use of space is crucial in home Exterior Design. Consider the layout of furniture."
 date: 2025-05-07T05:00:00Z
-image: "/images/projects/6.png"
+image: "/images/gallery/3.jpg"
 featured_in_homepage: true
 client_name: "Titan Group"
 project_type: "Exterior Design"

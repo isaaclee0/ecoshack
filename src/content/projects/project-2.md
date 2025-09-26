@@ -3,7 +3,7 @@ title: "Orion Home Studio Interior"
 meta_title: ""
 description: "Efficient use of space is crucial in home interior design. Consider the layout of furniture."
 date: 2025-05-07T05:00:00Z
-image: "/images/projects/2.png"
+image: "/images/gallery/10.jpg"
 featured_in_homepage: true
 client_name: "Prime Properties"
 project_type: "Architecture Plan"

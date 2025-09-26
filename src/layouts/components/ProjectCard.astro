@@ -14,10 +14,13 @@ const { project, index } = Astro.props;
   <div class="overflow-hidden">
     <ImageMod
       src={project.data.image!}
-      height={0}
-      width={0}
+      height={327}
+      width={445}
       loading={"lazy"}
-      format="webp"
+      format="avif"
+      quality={85}
+      widths={[320, 445, 600, 800]}
+      sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 445px"
       alt={project.data.title}
       class="group-hover:scale-105 transition duration-300 ease-out"
     />

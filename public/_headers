@@ -1,8 +1,30 @@
+# Global security headers with HTTPS enforcement
 /*
-  X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Robots-Tag: index, follow
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: upgrade-insecure-requests
+  X-Forwarded-Proto: https
+
+# HTML pages - prevent caching to avoid stale content
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Vary: Accept-Encoding
+
+# Root path
+/
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Vary: Accept-Encoding
 
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
@@ -29,4 +51,7 @@
   Cache-Control: public, max-age=31536000
 
 /*.webp
+  Cache-Control: public, max-age=31536000
+
+/*.avif
   Cache-Control: public, max-age=31536000

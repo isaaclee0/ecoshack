@@ -49,7 +49,9 @@ const { enable, title, subtitle, description, images } = gallery;
                 width={392}
                 src={img}
                 alt={`gallery-slider-${i}`}
-                format="webp"
+                format="avif"
+                quality={85}
+                loading="lazy"
               />
             </div>
           ))}

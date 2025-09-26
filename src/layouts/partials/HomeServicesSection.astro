@@ -56,7 +56,9 @@ const featuredHomeServices = (await getSinglePage("services")).filter(
                   alt={service.data.title}
                   width={600}
                   height={500}
-                  format="webp"
+                  format="avif"
+                  quality={85}
+                  loading="lazy"
                   class={`${
                     index % 3 === 1
                       ? "h-[500px] object-cover w-full"

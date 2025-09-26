@@ -3,7 +3,7 @@ title: "Office Interior "
 meta_title: ""
 description: "Efficient use of space is crucial in home interior design. Consider the layout of furniture."
 date: 2025-05-07T05:00:00Z
-image: "/images/projects/5.png"
+image: "/images/gallery/2.jpg"
 featured_in_homepage: true
 client_name: "Skyline Developers"
 project_type: "Interior Design"

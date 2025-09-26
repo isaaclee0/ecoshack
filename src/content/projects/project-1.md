@@ -3,7 +3,7 @@ title: "D-Orex Home Interior"
 meta_title: ""
 description: "Efficient use of space is crucial in home interior design. Consider the layout of furniture."
 date: 2025-05-07T05:00:00Z
-image: "/images/projects/1.png"
+image: "/images/gallery/9.jpg"
 featured_in_homepage: true
 client_name: "Excel Homes"
 project_type: "Interior Design"

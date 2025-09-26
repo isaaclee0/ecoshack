@@ -18,6 +18,11 @@ const { title, image, date, description } = post.data;
       alt={title}
       width={450}
       height={600}
+      format="avif"
+      quality={85}
+      loading="lazy"
+      widths={[320, 445, 600, 800]}
+      sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 445px"
       class="object-cover aspect-[9/12] w-full group-hover:scale-105 transition-transform duration-300 ease-in-out"
     />
   </div>
