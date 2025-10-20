@@ -27,3 +27,12 @@ package-lock.json
 
 # ide
 .idea/
+
+# local image scratch workspace (exclude from repo)
+imagestock/
+imagestock/downloaded_images/
+imagestock/optimized_images/
+imagestock/venv/
+
+# python virtual environments
+venv/
