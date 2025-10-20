@@ -193,36 +193,12 @@ const servicesCollection = defineCollection({
         }),
       )
       .optional(),
+    gallery_images: z.array(z.string()).optional(),
     draft: z.boolean().optional(),
   }),
 });
 
-// Career collecitons schema
-const careerCollection = defineCollection({
-  loader: glob({
-    pattern: "**/*.{md,mdx}",
-    base: "src/content/career",
-  }),
-  schema: z.object({
-    title: z.string(),
-    meta_title: z.string(),
-    description: z.string(),
-    image: z.string(),
-    available_jobs: z.object({
-      title: z.string(),
-      description: z.string(),
-      jobs: z
-        .array(
-          z.object({
-            name: z.string(),
-            location: z.string(),
-            link: z.string(),
-          }),
-        )
-        .optional(),
-    }),
-  }),
-});
+
 
 // Gallery collection schema
 const galleryCollection = defineCollection({
@@ -234,9 +210,9 @@ const galleryCollection = defineCollection({
     image: z.string(),
     gallery_images: z.array(
       z.object({
-        design: z.string(),
-        designer: z.string(),
         image: z.string(),
+        design: z.string().optional(),
+        designer: z.string().optional(),
       }),
     ),
   }),
@@ -316,7 +292,6 @@ export const collections = {
   services: servicesCollection,
   projects: projectsCollection,
   gallery: galleryCollection,
-  career: careerCollection,
   reviews: reviewsCollection,
   faqs: faqsCollection,
 

@@ -1,5 +1,6 @@
 ---
 import ImageMod from "@/components/ImageMod.astro";
+import ServiceGallery from "@/components/ServiceGallery.astro";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
@@ -39,15 +40,22 @@ const services = await getSinglePage(FOLDER);
               data-aos-delay="300"
               class="col-10 lg:col-5 mx-auto"
             >
-              <ImageMod
-                src={service.data.image!}
-                alt={service.data.title}
-                width={600}
-                height={800}
-                format="avif"
-                quality={85}
-                loading="lazy"
-              />
+              {service.data.gallery_images && service.data.gallery_images.length > 0 ? (
+                <ServiceGallery 
+                  images={service.data.gallery_images} 
+                  title={service.data.title}
+                />
+              ) : (
+                <ImageMod
+                  src={service.data.image!}
+                  alt={service.data.title}
+                  width={600}
+                  height={800}
+                  format="avif"
+                  quality={85}
+                  loading="lazy"
+                />
+              )}
             </div>
 
             <div class="col-10 lg:col-5 mx-auto">

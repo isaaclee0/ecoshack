@@ -1,0 +1,31 @@
+---
+interface Props {
+  images: string[];
+  className?: string;
+  columns?: number;
+  mdColumns?: number;
+  alt?: string;
+}
+
+const {
+  images = [],
+  className = "",
+  columns = 2,
+  mdColumns = 3,
+  alt = "Gallery image",
+}: Props = Astro.props as Props;
+---
+<div class={`columns-${columns} md:columns-${mdColumns} gap-4 ${className}`}>
+  {
+    images?.map((src: string, index: number) => (
+      <figure class="group mb-4 break-inside-avoid overflow-hidden rounded-xl bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+        <img
+          src={src}
+          alt={`${alt} ${index + 1}`}
+          class="w-full h-auto block"
+          loading="lazy"
+        />
+      </figure>
+    ))
+  }
+</div>

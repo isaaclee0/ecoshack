@@ -16,7 +16,7 @@ const galleryIndex = (await getEntry(
 
   <section class="section">
     <div class="container">
-      <div class="md:columns-2 gap-x-[150px]">
+      <div class="md:columns-2" style="column-gap:0.5rem">
         {
           galleryIndex.data.gallery_images?.map((item, i) => (
             <GalleryCard item={item} index={i} />

@@ -14,7 +14,7 @@ const { item, index } = Astro.props;
 <div
   data-aos="fade-up-sm"
   data-aos-delay={index * 100 + 100}
-  class="relative mb-[7rem] lg:mb-[12rem] last:mb-0 group max-md:w-[80%] mx-auto pb-16"
+  class="relative group break-inside-avoid mb-2"
 >
   <div class="overflow-hidden">
     <ImageMod
@@ -24,17 +24,10 @@ const { item, index } = Astro.props;
       loading="lazy"
       format="avif"
       quality={85}
-      alt={item.designer}
+      alt={item.design || 'Gallery image'}
       widths={[400, 600, 800, 1200]}
       sizes="(max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
       class="group-hover:scale-105 transition-transform duration-300 ease-in-out"
     />
-  </div>
-
-  <div
-    class="absolute bottom-0 left-0 w-full opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex flex-wrap items-center justify-between gap-2 pt-8"
-  >
-    <h3 class="h5 font-medium" set:html={markdownify(item.design)} />
-    <p set:html={markdownify(item.designer)} />
   </div>
 </div>

@@ -15,6 +15,7 @@ export default defineConfig({
   site: config.site.base_url || "https://ecoshack.com.au",
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
+  devToolbar: { enabled: false },
   image: { 
     service: sharp(),
     domains: ["localhost"],
@@ -33,6 +34,7 @@ export default defineConfig({
         "@/shortcodes/Youtube",
         "@/shortcodes/Tabs",
         "@/shortcodes/Tab",
+        "@/shortcodes/MasonryGallery.tsx",
       ],
     }),
     mdx(),

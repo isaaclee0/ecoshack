@@ -3,7 +3,7 @@ title: "Storage Sheds"
 meta_title: "Custom Storage Sheds - Eco Shack"
 description: "Secure, weatherproof storage solutions for tools, equipment, and seasonal items. Built to last with quality materials."
 date: 2025-05-06T05:00:00Z
-image: "/images/services/service-3.png"
+image: "/images/storageshed.jpg"
 categories: ["storage"]
 featured_in_homepage: true
 features:

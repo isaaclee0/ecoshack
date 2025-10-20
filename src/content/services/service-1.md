@@ -3,7 +3,7 @@ title: "Spare Rooms & Bedrooms"
 meta_title: "Custom Spare Rooms & Bedrooms - Eco Shack"
 description: "Create additional living space with our custom-built spare rooms and bedrooms. Perfect for guests, teenagers, or rental income."
 date: 2025-05-06T05:00:00Z
-image: "/images/services/service-1.png"
+image: "/images/spareroom.jpg"
 categories: ["accommodation"]
 featured_in_homepage: true
 features:

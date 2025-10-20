@@ -80,7 +80,7 @@ const { title, description, meta_title, image, address_section } = contact.data;
                 id="name"
                 name="name"
                 class="form-input"
-                placeholder="Want to decor my house"
+                placeholder="I want a shack"
                 type="text"
               />
             </div>
@@ -128,14 +128,16 @@ const { title, description, meta_title, image, address_section } = contact.data;
               <h4 class="h6 mb-3">Office Phone</h4>
               <a href={`tel:${config.params.phone}`}>{config.params.phone}</a>
             </li>
-            <li data-aos="fade-up-sm" data-aos-delay="350">
-              <h4 class="h6 mb-3">Office Address</h4>
-              <a
-                target="_blank"
-                href={`https://www.google.com/maps?q=${encodeURIComponent(config.params.address)}`}
-                set:html={markdownify(config.params.address)}
-              />
-            </li>
+            {config.params.address && (
+              <li data-aos="fade-up-sm" data-aos-delay="350">
+                <h4 class="h6 mb-3">Office Address</h4>
+                <a
+                  target="_blank"
+                  href={`https://www.google.com/maps?q=${encodeURIComponent(config.params.address)}`}
+                  set:html={markdownify(config.params.address)}
+                />
+              </li>
+            )}
           </ul>
         </div>
       </div>

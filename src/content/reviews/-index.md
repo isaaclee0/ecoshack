@@ -3,7 +3,7 @@ title: "Customer Reviews"
 subtitle: "Reviews"
 meta_title: "Reviews"
 description: "We encourage our team to fearlessly challenge conventions and pioneer new paths."
-image: "/images/contact.png"
+image: "/images/banner-testimonial.jpg"
 
 testimonials:
   - name: "William Elijah Jr."

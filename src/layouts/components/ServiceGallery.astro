@@ -1,0 +1,36 @@
+---
+import ImageMod from "./ImageMod.astro";
+
+type Props = {
+  images: string[];
+  title: string;
+};
+
+const { images, title } = Astro.props;
+---
+
+<div class="service-gallery mt-8">
+  <h4 class="text-xl font-medium text-primary mb-6">Gallery</h4>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    {
+      images?.map((image, index) => (
+        <div
+          data-aos="fade-up-sm"
+          data-aos-delay={index * 100 + 100}
+          class="relative group overflow-hidden rounded-lg"
+        >
+          <ImageMod
+            src={image}
+            height={200}
+            width={300}
+            loading="lazy"
+            format="avif"
+            quality={85}
+            alt={`${title} - Image ${index + 1}`}
+            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 ease-in-out"
+          />
+        </div>
+      ))
+    }
+  </div>
+</div>

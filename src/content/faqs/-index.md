@@ -1,6 +1,6 @@
 ---
 title: Frequently asked questions
-description: Answers to Common Questions About Our Mission and Work and Quick Guide to Our Programs and Processes
+description: Answers to Common Questions About Ecoshack
 button:
   enable: true
   label: "Contact Us"
@@ -11,16 +11,16 @@ badge:
   icon: "FaArtstation" ## Icons from https://react-icons.github.io/react-icons/icons/fa6/
   bg_color: "bg-secondary"
 list:
-  - question: "How secure is my financial data on your platform?"
-    answer: "We take the security and privacy of your financial data very seriously. Our platform employs industry-standard encryption protocols to safeguard your information during transmission and storage."
-  - question: "Do you offer phone support?"
-    answer: "Yes, we offer phone support for all customers. Contact us during business hours for assistance."
-  - question: "Can I use my own domain?"
-    answer: "Yes, you can use your own domain with all plans. Go to your account settings to set up your custom domain."
-  - question: "Do you offer a discount for annual plans?"
-    answer: "Yes, we offer a 20% discount on all annual plans. Contact us for more information."
-  - question: "Can I change my password?"
-    answer: "Yes, you can change your password at any time. Go to your account settings to update your password."
-  - question: "Do you offer a free plan?"
-    answer: "Yes, we offer a free plan with limited features. Upgrade to a paid plan for full access to all features."
+  - question: "Who is responsible for council approvals and permits?"
+    answer: "Council approvals and permits are the client's responsibility. While we can provide guidance on requirements, obtaining necessary approvals from local councils must be handled by the property owner."
+  - question: "What types of structures does EcoShack build?"
+    answer: "We specialize in eco-friendly outdoor structures including garden sheds, home offices, studios, workshops, spare rooms, and custom-designed buildings to suit your specific needs."
+  - question: "How long does it typically take to build an EcoShack?"
+    answer: "Build times vary depending on the size and complexity of your project. A standard garden shed may take 1-2 days, while larger structures like home offices or studios typically take 3-7 days to complete."
+  - question: "Are your structures environmentally friendly?"
+    answer: "Yes, sustainability is at the core of our business. We use eco-friendly materials, sustainable building practices, and design our structures to have minimal environmental impact while maximizing energy efficiency."
+  - question: "Do you offer installation services?"
+    answer: "Yes, we provide professional installation for all our structures. Our experienced team will ensure your EcoShack is properly constructed and ready for immediate use."
+  - question: "Can EcoShack structures be customized?"
+    answer: "Absolutely! We offer extensive customization options including size, layout, materials, finishes, and features. We work closely with clients to create structures that perfectly match their needs and aesthetic preferences."
 ---

@@ -1,31 +1,30 @@
 ---
-title: "The Journey to Beautiful Interiors"
+title: "Blackman's Bay Studio"
 meta_title: ""
-description: "From minimalist chic to bohemian flair, we'll delve into a myriad of design styles"
-date: 2025-05-04T05:00:00Z
-image: "/images/blog/2.png"
+description: "Garden Studio, fully lined, sound proofed and insulated."
+date: 2025-08-01T05:00:00Z
+image: "/images/blog/2.jpg"
 categories: ["Home"]
 featured: true
 draft: false
 ---
 
-#### Problems
+#### Blackman's Bay Studio
 
-**We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision.**
+Completed this little beauty for a customer in Blackmans Bay. 2.6x3.4 Garden Studio, clad in Macrocarpa and Corrugated iron, fully lined, sound proofed and insulated. Double glazed doors and windows. Delivered flat packed, completed in 2.5 days, just the power to go. 
 
-Explanation of how personal information is used to maintain the security of interior agency systems, prevent unauthorized access or fraud, and protect against other unlawful activities. Assurance that personal information will only be collected and used for purposes consistent with individuals' consent or preferences, where applicable, and in accordance with applicable privacy laws and regulations.
+We have a range of Eco Shack display shacks available for sale, all manufactured in the Huon Valley using local and Tasmanian materials where possible. We invite you to visit our Eco Shack village in Ranelagh to see them in person. 
+All our shacks are manufactured as flat packs and assembled on-site, making no location too difficult. We offer delivery and installation services across Tasmania. 
 
-![alt text](/images/projects/a.png)
+In addition to our ready-made options, we can also discuss our flat-pack range or create a custom build designed exactly to your preferences.
 
-#### Solutions
+**Customization Options:**
+All our shacks offer a variety of choices including size, lining, insulation, cladding style, gable or skillion roof, and window and door sizes. You can choose to purchase a flat pack for self-assembly or have us complete the installation from start to finish. Costs will vary depending on your selected style, windows, doors, cladding, and other features. 
 
-Explanation of how personal information is used to maintain the security of interior agency systems, prevent unauthorized access or fraud, and protect against other unlawful activities. Assurance that personal information will only be collected and used for purposes consistent with individuals' consent or preferences, where applicable, and in accordance with applicable privacy laws and regulations.
+We have licensed plumbers and electricians available to assist with lighting, power, and plumbing requirements. 
 
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+**Please Note:** While we are happy to discuss your needs, customers are responsible for their own due diligence in adhering to council guidelines. 
 
-#### Result
+![Interior shot 1](/images/blog/2b.jpg)
 
-Explanation of how personal information is used to maintain the security of interior agency systems, prevent unauthorized access or fraud, and protect against other unlawful activities. Assurance that personal information will only be collected and used for purposes consistent with individuals' consent or preferences, where applicable, and in accordance with applicable privacy laws and regulations.
-
-![alt text](/images/projects/b.png)
-![alt text](/images/projects/c.png)
+![Just add power!](/images/blog/2c.jpg)

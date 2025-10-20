@@ -6,7 +6,7 @@
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.svg",
-    "logo_footer": "/images/logo.svg",
+    "logo_footer": "/images/logo-white-transparent.png",
     "logo_width": "200",
     "logo_height": "40",
     "logo_text": "Eco Shack"
@@ -18,8 +18,8 @@
 
   "params": {
     "contact_form_action": "#",
-    "address": "Melbourne, Victoria, Australia",
-    "phone": "1300 ECO SHACK",
+    "address": "",
+    "phone": "0475 214 208",
     "email": "info@ecoshack.com.au",
     "footer_title": "Ready to Build Your Dream Structure?",
     "footer_content": "From spare rooms to studios, we create custom outdoor buildings that enhance your property and lifestyle."

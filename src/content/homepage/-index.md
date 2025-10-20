@@ -15,7 +15,7 @@ gallery:
   enable: true
   title: Custom Shack Designs.
   subtitle: OUR WORK
-  description: We specialise in building custom shacks, studios, spare rooms, and outdoor structures. Explore our portfolio of quality craftsmanship and innovative designs.
+  description: We specialise in building custom shacks, studios, spare rooms, saunas, off-grid bathrooms and outdoor structures. Explore our portfolio of quality craftsmanship and innovative designs.
   images:
     - "/images/gallery/1.jpg"
     - "/images/gallery/2.jpg"
@@ -28,16 +28,21 @@ gallery:
     - "/images/gallery/9.jpg"
     - "/images/gallery/10.jpg"
     - "/images/gallery/11.jpg"
-    - "/images/gallery/1.jpg"
-    - "/images/gallery/2.jpg"
-    - "/images/gallery/3.jpg"
-    - "/images/gallery/4.jpg"
-    - "/images/gallery/5.jpg"
+    - "/images/gallery/12.jpg"
+    - "/images/gallery/13.jpg"
+    - "/images/gallery/14.jpg"
+    - "/images/gallery/15.jpg"
+    - "/images/gallery/16.jpg"
+    - "/images/gallery/17.jpg"
+    - "/images/gallery/18.jpg"
+    - "/images/gallery/19.jpg"
+    - "/images/gallery/20.jpg"
+    - "/images/gallery/21.jpg"
 
 # Fun Facts
 fun_facts:
   enable: true
-  title: "Building quality outdoor structures across Australia"
+  title: "Building quality outdoor structures"
   description: "From concept to completion, we deliver exceptional results that exceed expectations."
   metrics:
     - name: "Shacks Built"
@@ -93,8 +98,8 @@ services_facts:
       description: "We start with a free on-site consultation to understand your needs and assess your space."
     - name: "Custom Design"
       description: "Our team creates a tailored design that maximises your space and meets your specific requirements."
-    - name: "Council Approval"
-      description: "We handle all necessary permits and council approvals to ensure your project meets local regulations."
+    - name: "Council Approval Guidance"
+      description: "We provide guidance on council requirements, though obtaining permits and approvals remains the client's responsibility."
     - name: "Quality Construction"
       description: "Using premium materials and expert craftsmanship, we build your shack to the highest standards."
     - name: "Final Handover"
