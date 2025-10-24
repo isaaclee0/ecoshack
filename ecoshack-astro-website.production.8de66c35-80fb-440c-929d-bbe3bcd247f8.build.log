@@ -1,0 +1,416 @@
+2025-10-20T03:52:45.698Z	Initializing build environment...
+2025-10-20T03:56:45.880Z	Initializing build environment...
+2025-10-20T03:56:52.157Z	Success: Finished initializing build environment
+2025-10-20T03:56:52.910Z	Cloning repository...
+2025-10-20T03:56:55.943Z	No build output detected to cache. Skipping.
+2025-10-20T03:56:55.943Z	No dependencies detected to cache. Skipping.
+2025-10-20T03:56:57.153Z	Detected the following tools from environment: yarn@1.22.22, nodejs@22.16.0
+2025-10-20T03:56:59.267Z	Installing project dependencies: bun install
+2025-10-20T03:56:59.374Z	bun install v1.2.15 (df017990)
+2025-10-20T03:56:59.400Z	Resolving dependencies
+2025-10-20T03:57:06.216Z	Resolved, downloaded and extracted [2564]
+2025-10-20T03:57:06.871Z	Saved lockfile
+2025-10-20T03:57:06.871Z	
+2025-10-20T03:57:06.871Z	+ @tailwindcss/forms@0.5.10
+2025-10-20T03:57:06.871Z	+ @tailwindcss/typography@0.5.19
+2025-10-20T03:57:06.871Z	+ @tailwindcss/vite@4.1.14
+2025-10-20T03:57:06.872Z	+ @types/aos@3.0.7
+2025-10-20T03:57:06.872Z	+ @types/node@22.15.18 (v24.8.1 available)
+2025-10-20T03:57:06.872Z	+ @types/react@19.1.4 (v19.2.2 available)
+2025-10-20T03:57:06.872Z	+ @types/react-dom@19.1.5 (v19.2.2 available)
+2025-10-20T03:57:06.872Z	+ eslint@9.38.0
+2025-10-20T03:57:06.872Z	+ prettier@3.6.2
+2025-10-20T03:57:06.872Z	+ prettier-plugin-astro@0.14.1
+2025-10-20T03:57:06.872Z	+ prettier-plugin-tailwindcss@0.6.14 (v0.7.1 available)
+2025-10-20T03:57:06.872Z	+ sharp@0.33.5 (v0.34.4 available)
+2025-10-20T03:57:06.873Z	+ tailwindcss@4.1.14
+2025-10-20T03:57:06.873Z	+ typescript@5.9.3
+2025-10-20T03:57:06.873Z	+ @astrojs/check@0.9.4
+2025-10-20T03:57:06.873Z	+ @astrojs/mdx@4.2.6 (v4.3.7 available)
+2025-10-20T03:57:06.873Z	+ @astrojs/react@4.2.7 (v4.4.0 available)
+2025-10-20T03:57:06.873Z	+ @astrojs/rss@4.0.11 (v4.0.12 available)
+2025-10-20T03:57:06.873Z	+ @astrojs/sitemap@3.4.0 (v3.6.0 available)
+2025-10-20T03:57:06.873Z	+ @digi4care/astro-google-tagmanager@1.6.0
+2025-10-20T03:57:06.873Z	+ @justinribeiro/lite-youtube@1.8.2
+2025-10-20T03:57:06.873Z	+ aos@2.3.4
+2025-10-20T03:57:06.873Z	+ astro@5.7.13 (v5.14.6 available)
+2025-10-20T03:57:06.873Z	+ astro-auto-import@0.4.5
+2025-10-20T03:57:06.873Z	+ astro-font@1.1.0
+2025-10-20T03:57:06.873Z	+ date-fns@4.1.0
+2025-10-20T03:57:06.873Z	+ github-slugger@2.0.0
+2025-10-20T03:57:06.873Z	+ gray-matter@4.0.3
+2025-10-20T03:57:06.873Z	+ marked@15.0.12 (v16.4.1 available)
+2025-10-20T03:57:06.873Z	+ prop-types@15.8.1
+2025-10-20T03:57:06.874Z	+ react@19.2.0
+2025-10-20T03:57:06.874Z	+ react-countup@6.5.3
+2025-10-20T03:57:06.874Z	+ react-dom@19.2.0
+2025-10-20T03:57:06.874Z	+ react-icons@5.5.0
+2025-10-20T03:57:06.874Z	+ react-intersection-observer@9.16.0
+2025-10-20T03:57:06.874Z	+ remark-collapse@0.1.2
+2025-10-20T03:57:06.874Z	+ remark-toc@9.0.0
+2025-10-20T03:57:06.874Z	+ swiper@11.2.10 (v12.0.2 available)
+2025-10-20T03:57:06.879Z	+ vite@6.4.0 (v7.1.10 available)
+2025-10-20T03:57:06.879Z	
+2025-10-20T03:57:06.879Z	615 packages installed [7.52s]
+2025-10-20T03:57:06.879Z	
+2025-10-20T03:57:06.879Z	Blocked 1 postinstall. Run `bun pm untrusted` for details.
+2025-10-20T03:57:06.896Z	Executing user build command: npm run build
+2025-10-20T03:57:07.095Z	
+2025-10-20T03:57:07.096Z	> nextspace-astro@1.0.0 build
+2025-10-20T03:57:07.096Z	> astro build
+2025-10-20T03:57:07.096Z	
+2025-10-20T03:57:08.873Z	03:57:08 [content] Syncing content
+2025-10-20T03:57:09.095Z	[Shiki] 10 instances have been created. Shiki is supposed to be used as a singleton, consider refactoring your code to cache your highlighter instance; Or call `highlighter.dispose()` to release unused instances.
+2025-10-20T03:57:09.115Z	03:57:09 [content] Synced content
+2025-10-20T03:57:09.115Z	03:57:09 [types] Generated 865ms
+2025-10-20T03:57:09.116Z	03:57:09 [build] output: "static"
+2025-10-20T03:57:09.116Z	03:57:09 [build] mode: "static"
+2025-10-20T03:57:09.116Z	03:57:09 [build] directory: /opt/buildhome/repo/dist/
+2025-10-20T03:57:09.116Z	03:57:09 [build] Collecting build info...
+2025-10-20T03:57:09.117Z	03:57:09 [build] ✓ Completed in 886ms.
+2025-10-20T03:57:09.117Z	03:57:09 [build] Building static entrypoints...
+2025-10-20T03:57:12.562Z	03:57:12 [vite] ✓ built in 3.42s
+2025-10-20T03:57:12.563Z	03:57:12 [build] ✓ Completed in 3.45s.
+2025-10-20T03:57:12.563Z	
+2025-10-20T03:57:12.563Z	 building client (vite) 
+2025-10-20T03:57:12.573Z	03:57:12 [vite] transforming...
+2025-10-20T03:57:13.713Z	03:57:13 [vite] ✓ 99 modules transformed.
+2025-10-20T03:57:13.803Z	03:57:13 [vite] rendering chunks...
+2025-10-20T03:57:13.901Z	03:57:13 [vite] computing gzip size...
+2025-10-20T03:57:13.923Z	03:57:13 [vite] dist/_astro/GallerySlider.DnJ5xLaK.css                                              5.14 kB │ gzip:  0.95 kB
+2025-10-20T03:57:13.924Z	03:57:13 [vite] dist/_astro/autoplay.DHBATib1.css                                                   6.39 kB │ gzip:  2.85 kB
+2025-10-20T03:57:13.925Z	03:57:13 [vite] dist/_astro/Base.DvB2Xm2x.css                                                      26.05 kB │ gzip:  2.24 kB
+2025-10-20T03:57:13.925Z	03:57:13 [vite] dist/_astro/_commonjsHelpers.CqkleIqs.js                                            0.12 kB │ gzip:  0.13 kB
+2025-10-20T03:57:13.925Z	03:57:13 [vite] dist/_astro/GallerySlider.astro_astro_type_script_index_0_lang.z-eYQOh4.js          0.31 kB │ gzip:  0.24 kB
+2025-10-20T03:57:13.925Z	03:57:13 [vite] dist/_astro/jsx-runtime.D_zvdyIk.js                                                 0.73 kB │ gzip:  0.46 kB
+2025-10-20T03:57:13.926Z	03:57:13 [vite] dist/_astro/Youtube.BJ8AVHpw.js                                                     1.39 kB │ gzip:  0.82 kB
+2025-10-20T03:57:13.926Z	03:57:13 [vite] dist/_astro/Accordion.DQo5QjwV.js                                                   1.65 kB │ gzip:  0.89 kB
+2025-10-20T03:57:13.926Z	03:57:13 [vite] dist/_astro/HomeServicesSection.astro_astro_type_script_index_0_lang.BiUMnPI0.js    2.52 kB │ gzip:  1.22 kB
+2025-10-20T03:57:13.926Z	03:57:13 [vite] dist/_astro/Testimonial.astro_astro_type_script_index_0_lang.CIIS9Gyi.js            3.87 kB │ gzip:  1.52 kB
+2025-10-20T03:57:13.927Z	03:57:13 [vite] dist/_astro/index.Cq4AiLjf.js                                                       7.92 kB │ gzip:  3.10 kB
+2025-10-20T03:57:13.927Z	03:57:13 [vite] dist/_astro/lite-youtube.xshX6Rf4.js                                                8.91 kB │ gzip:  3.06 kB
+2025-10-20T03:57:13.927Z	03:57:13 [vite] dist/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CtSceO8m.js          14.78 kB │ gzip:  5.06 kB
+2025-10-20T03:57:13.927Z	03:57:13 [vite] dist/_astro/Counter.BjWN_T37.js                                                    14.96 kB │ gzip:  5.56 kB
+2025-10-20T03:57:13.927Z	03:57:13 [vite] dist/_astro/Base.astro_astro_type_script_index_0_lang.BZrjl47w.js                  15.53 kB │ gzip:  5.56 kB
+2025-10-20T03:57:13.927Z	03:57:13 [vite] dist/_astro/Tabs.zcfG1YIt.js                                                       39.69 kB │ gzip: 12.42 kB
+2025-10-20T03:57:13.928Z	03:57:13 [vite] dist/_astro/autoplay.B3sd7kYm.js                                                   73.36 kB │ gzip: 22.53 kB
+2025-10-20T03:57:13.928Z	03:57:13 [vite] dist/_astro/client.CbAH-7PF.js                                                    186.66 kB │ gzip: 58.56 kB
+2025-10-20T03:57:13.931Z	03:57:13 [vite] ✓ built in 1.36s
+2025-10-20T03:57:13.968Z	
+2025-10-20T03:57:13.968Z	 generating static routes 
+2025-10-20T03:57:14.095Z	03:57:14 ▶ src/pages/404.astro
+2025-10-20T03:57:14.808Z	03:57:14   └─ /404.html (+712ms) 
+2025-10-20T03:57:16.117Z	03:57:16 ▶ src/pages/about.astro
+2025-10-20T03:57:16.181Z	03:57:16   └─ /about/index.html (+64ms) 
+2025-10-20T03:57:16.194Z	03:57:16 ▶ src/pages/blog/page/[slug].astro
+2025-10-20T03:57:16.197Z	03:57:16 ▶ src/pages/blog/[single].astro
+2025-10-20T03:57:16.254Z	03:57:16   ├─ /blog/post-1/index.html (+55ms) 
+2025-10-20T03:57:16.295Z	03:57:16   ├─ /blog/post-2/index.html (+41ms) 
+2025-10-20T03:57:16.339Z	03:57:16   └─ /blog/post-3/index.html (+44ms) 
+2025-10-20T03:57:16.342Z	03:57:16 ▶ src/pages/blog/index.astro
+2025-10-20T03:57:16.386Z	03:57:16   └─ /blog/index.html (+44ms) 
+2025-10-20T03:57:16.388Z	03:57:16 ▶ src/pages/contact.astro
+2025-10-20T03:57:16.432Z	03:57:16   └─ /contact/index.html (+44ms) 
+2025-10-20T03:57:16.438Z	03:57:16 ▶ src/pages/faqs.astro
+2025-10-20T03:57:16.479Z	03:57:16   └─ /faqs/index.html (+41ms) 
+2025-10-20T03:57:16.480Z	03:57:16 ▶ src/pages/gallery.astro
+2025-10-20T03:57:16.528Z	03:57:16   └─ /gallery/index.html (+47ms) 
+2025-10-20T03:57:16.530Z	03:57:16 ▶ src/pages/projects/[single].astro
+2025-10-20T03:57:16.581Z	03:57:16   ├─ /projects/project-1/index.html (+50ms) 
+2025-10-20T03:57:16.623Z	03:57:16   ├─ /projects/project-2/index.html (+41ms) 
+2025-10-20T03:57:16.667Z	03:57:16   ├─ /projects/project-3/index.html (+45ms) 
+2025-10-20T03:57:16.709Z	03:57:16   ├─ /projects/project-4/index.html (+42ms) 
+2025-10-20T03:57:16.752Z	03:57:16   ├─ /projects/project-5/index.html (+42ms) 
+2025-10-20T03:57:16.792Z	03:57:16   ├─ /projects/project-6/index.html (+40ms) 
+2025-10-20T03:57:16.834Z	03:57:16   └─ /projects/project-7/index.html (+42ms) 
+2025-10-20T03:57:16.837Z	03:57:16 ▶ src/pages/projects/index.astro
+2025-10-20T03:57:16.879Z	03:57:16   └─ /projects/index.html (+42ms) 
+2025-10-20T03:57:16.884Z	03:57:16 ▶ src/pages/reviews.astro
+2025-10-20T03:57:16.926Z	03:57:16   └─ /reviews/index.html (+42ms) 
+2025-10-20T03:57:16.928Z	03:57:16 ▶ src/pages/services.astro
+2025-10-20T03:57:16.933Z	Image not found - /public/images/services/service-5.png. Make sure the image is in the /public/images folder.
+2025-10-20T03:57:16.934Z	Image not found - /public/images/services/service-6.png. Make sure the image is in the /public/images folder.
+2025-10-20T03:57:16.973Z	03:57:16   └─ /services/index.html (+45ms) 
+2025-10-20T03:57:16.974Z	03:57:16 ▶ src/pages/[regular].astro
+2025-10-20T03:57:17.024Z	03:57:16   ├─ /elements/index.html (+49ms) 
+2025-10-20T03:57:17.066Z	03:57:17   ├─ /privacy-policy/index.html (+42ms) 
+2025-10-20T03:57:17.109Z	03:57:17   └─ /terms-and-conditions/index.html (+43ms) 
+2025-10-20T03:57:17.117Z	03:57:17 ▶ src/pages/index.astro
+2025-10-20T03:57:17.178Z	03:57:17   └─ /index.html (+61ms) 
+2025-10-20T03:57:17.178Z	03:57:17 ✓ Completed in 3.24s.
+2025-10-20T03:57:17.178Z	
+2025-10-20T03:57:17.178Z	 generating optimized images 
+2025-10-20T03:57:23.803Z	03:57:23   ▶ /_astro/textonly.DV4Xotz9_2gPI9r.avif (before: 5kB, after: 4kB) (+6.62s) (1/210)
+2025-10-20T03:57:23.888Z	03:57:23   ▶ /_astro/banner.M8yPjjcp_ZBg5z9.webp (before: 329kB, after: 386kB) (+6.71s) (2/210)
+2025-10-20T03:57:24.044Z	03:57:24   ▶ /_astro/logo-white-transparent.BUxDw18D_20m17I.avif (before: 40kB, after: 4kB) (+245ms) (3/210)
+2025-10-20T03:57:24.571Z	03:57:24   ▶ /_astro/3.CV5h6zML_ZzwhhH.avif (before: 367kB, after: 28kB) (+527ms) (4/210)
+2025-10-20T03:57:26.920Z	03:57:26   ▶ /_astro/banner.M8yPjjcp_Z2rzlqB.avif (before: 329kB, after: 387kB) (+3.03s) (5/210)
+2025-10-20T03:57:27.498Z	03:57:27   ▶ /_astro/4.CAH6ydL6_ZUIKKy.avif (before: 1036kB, after: 28kB) (+578ms) (6/210)
+2025-10-20T03:57:27.563Z	03:57:27   ▶ /_astro/3.CV5h6zML_vKNtk.avif (before: 367kB, after: 381kB) (+2.99s) (7/210)
+2025-10-20T03:57:28.287Z	03:57:28   ▶ /_astro/3.CV5h6zML_ZorDVJ.avif (before: 367kB, after: 50kB) (+724ms) (8/210)
+2025-10-20T03:57:29.883Z	03:57:29   ▶ /_astro/3.CV5h6zML_Z1DOMYw.avif (before: 367kB, after: 110kB) (+1.60s) (9/210)
+2025-10-20T03:57:32.610Z	03:57:32   ▶ /_astro/3.CV5h6zML_Z1SAzfq.avif (before: 367kB, after: 197kB) (+2.72s) (10/210)
+2025-10-20T03:57:37.656Z	03:57:37   ▶ /_astro/3.CV5h6zML_1sTB4s.avif (before: 367kB, after: 421kB) (+5.05s) (11/210)
+2025-10-20T03:57:37.769Z	03:57:37   ▶ /_astro/4.CAH6ydL6_fR2Nn.avif (before: 1036kB, after: 994kB) (+10.27s) (12/210)
+2025-10-20T03:57:38.534Z	03:57:38   ▶ /_astro/4.CAH6ydL6_ZlgGeX.avif (before: 1036kB, after: 48kB) (+765ms) (13/210)
+2025-10-20T03:57:40.335Z	03:57:40   ▶ /_astro/4.CAH6ydL6_Z1coGC9.avif (before: 1036kB, after: 99kB) (+1.80s) (14/210)
+2025-10-20T03:57:43.285Z	03:57:43   ▶ /_astro/3.CV5h6zML_FBz8C.avif (before: 367kB, after: 497kB) (+5.63s) (15/210)
+2025-10-20T03:57:43.342Z	03:57:43   ▶ /_astro/4.CAH6ydL6_Z2vaRFY.avif (before: 1036kB, after: 166kB) (+3.01s) (16/210)
+2025-10-20T03:57:43.978Z	03:57:43   ▶ /_astro/3.CV5h6zML_Z8bRC1.avif (before: 367kB, after: 48kB) (+693ms) (17/210)
+2025-10-20T03:57:45.131Z	03:57:45   ▶ /_astro/3.CV5h6zML_Z1imaXK.avif (before: 367kB, after: 62kB) (+1.15s) (18/210)
+2025-10-20T03:57:45.787Z	03:57:45   ▶ /_astro/3.CV5h6zML_Z1PIiCE.avif (before: 367kB, after: 33kB) (+659ms) (19/210)
+2025-10-20T03:57:47.434Z	03:57:47   ▶ /_astro/3.CV5h6zML_Z1QFnT4.avif (before: 367kB, after: 110kB) (+1.65s) (20/210)
+2025-10-20T03:57:48.302Z	03:57:48   ▶ /_astro/4.CAH6ydL6_2l3bSu.avif (before: 1036kB, after: 348kB) (+4.96s) (21/210)
+2025-10-20T03:57:49.999Z	03:57:49   ▶ /_astro/3.CV5h6zML_LOizg.avif (before: 367kB, after: 197kB) (+2.56s) (22/210)
+2025-10-20T03:57:50.575Z	03:57:50   ▶ /_astro/5.Cj5mhlCl_2v3zhQ.avif (before: 423kB, after: 39kB) (+571ms) (23/210)
+2025-10-20T03:57:54.126Z	03:57:54   ▶ /_astro/5.Cj5mhlCl_1IYSMf.avif (before: 423kB, after: 454kB) (+3.55s) (24/210)
+2025-10-20T03:57:54.191Z	03:57:54   ▶ /_astro/4.CAH6ydL6_1K5djr.avif (before: 1036kB, after: 444kB) (+5.89s) (25/210)
+2025-10-20T03:57:54.937Z	03:57:54   ▶ /_astro/4.CAH6ydL6_1hABRH.avif (before: 1036kB, after: 45kB) (+746ms) (26/210)
+2025-10-20T03:57:54.957Z	03:57:54   ▶ /_astro/5.Cj5mhlCl_1L1uOo.avif (before: 423kB, after: 69kB) (+830ms) (27/210)
+2025-10-20T03:57:55.839Z	03:57:55   ▶ /_astro/4.CAH6ydL6_ZPkvA8.avif (before: 1036kB, after: 57kB) (+902ms) (28/210)
+2025-10-20T03:57:56.432Z	03:57:56   ▶ /_astro/4.CAH6ydL6_ZGFU52.avif (before: 1036kB, after: 32kB) (+592ms) (29/210)
+2025-10-20T03:57:56.619Z	03:57:56   ▶ /_astro/5.Cj5mhlCl_vDlLB.avif (before: 423kB, after: 139kB) (+1.66s) (30/210)
+2025-10-20T03:57:58.011Z	03:57:58   ▶ /_astro/4.CAH6ydL6_Z1myzHp.avif (before: 1036kB, after: 99kB) (+1.58s) (31/210)
+2025-10-20T03:57:59.362Z	03:57:59   ▶ /_astro/5.Cj5mhlCl_gRzvH.avif (before: 423kB, after: 237kB) (+2.74s) (32/210)
+2025-10-20T03:58:00.567Z	03:58:00   ▶ /_astro/4.CAH6ydL6_Z1kM4od.avif (before: 1036kB, after: 166kB) (+2.56s) (33/210)
+2025-10-20T03:58:00.924Z	03:58:00   ▶ /_astro/6.BSP7pZzr_qhuiz.avif (before: 324kB, after: 27kB) (+355ms) (34/210)
+2025-10-20T03:58:03.969Z	03:58:03   ▶ /_astro/6.BSP7pZzr_uvjra.avif (before: 324kB, after: 325kB) (+3.04s) (35/210)
+2025-10-20T03:58:04.780Z	03:58:04   ▶ /_astro/6.BSP7pZzr_zxdU9.avif (before: 324kB, after: 57kB) (+810ms) (36/210)
+2025-10-20T03:58:05.479Z	03:58:05   ▶ /_astro/5.Cj5mhlCl_Z2o3rqy.avif (before: 423kB, after: 489kB) (+6.12s) (37/210)
+2025-10-20T03:58:06.142Z	03:58:06   ▶ /_astro/6.BSP7pZzr_ZEOU7D.avif (before: 324kB, after: 116kB) (+1.36s) (38/210)
+2025-10-20T03:58:06.264Z	03:58:06   ▶ /_astro/5.Cj5mhlCl_22hh97.avif (before: 423kB, after: 66kB) (+785ms) (39/210)
+2025-10-20T03:58:07.039Z	03:58:07   ▶ /_astro/7.9-uaBKRy_1mKKP9.avif (before: 409kB, after: 67kB) (+774ms) (40/210)
+2025-10-20T03:58:08.600Z	03:58:08   ▶ /_astro/6.BSP7pZzr_ZTAGnx.avif (before: 324kB, after: 196kB) (+2.46s) (41/210)
+2025-10-20T03:58:10.257Z	03:58:10   ▶ /_astro/7.9-uaBKRy_3sxVH.avif (before: 409kB, after: 439kB) (+3.22s) (42/210)
+2025-10-20T03:58:11.140Z	03:58:11   ▶ /_astro/7.9-uaBKRy_ZpmkKY.avif (before: 409kB, after: 70kB) (+883ms) (43/210)
+2025-10-20T03:58:12.931Z	03:58:12   ▶ /_astro/7.9-uaBKRy_Z1EJtNL.avif (before: 409kB, after: 142kB) (+1.79s) (44/210)
+2025-10-20T03:58:14.244Z	03:58:14   ▶ /_astro/6.BSP7pZzr_1rE72i.avif (before: 324kB, after: 386kB) (+5.64s) (45/210)
+2025-10-20T03:58:15.032Z	03:58:15   ▶ /_astro/6.BSP7pZzr_PN0eR.avif (before: 324kB, after: 55kB) (+788ms) (46/210)
+2025-10-20T03:58:15.419Z	03:58:15   ▶ /_astro/7.9-uaBKRy_Z1Tvg4F.avif (before: 409kB, after: 243kB) (+2.49s) (47/210)
+2025-10-20T03:58:15.469Z	03:58:15   ▶ /_astro/8.P37AflL-_ZkANQD.avif (before: 650kB, after: 29kB) (+436ms) (48/210)
+2025-10-20T03:58:20.338Z	03:58:20   ▶ /_astro/8.P37AflL-_B0UIs.avif (before: 650kB, after: 473kB) (+4.87s) (49/210)
+2025-10-20T03:58:21.009Z	03:58:21   ▶ /_astro/8.P37AflL-_Z2wmpGL.avif (before: 650kB, after: 51kB) (+671ms) (50/210)
+2025-10-20T03:58:21.525Z	03:58:21   ▶ /_astro/7.9-uaBKRy_10BlwP.avif (before: 409kB, after: 507kB) (+6.11s) (51/210)
+2025-10-20T03:58:22.353Z	03:58:22   ▶ /_astro/7.9-uaBKRy_Z96yrg.avif (before: 409kB, after: 67kB) (+827ms) (52/210)
+2025-10-20T03:58:22.463Z	03:58:22   ▶ /_astro/8.P37AflL-_1irz4n.avif (before: 650kB, after: 105kB) (+1.45s) (53/210)
+2025-10-20T03:58:23.727Z	03:58:23   ▶ /_astro/a.DnuIoubX_Z27aP06.avif (before: 65kB, after: 63kB) (+1.37s) (54/210)
+2025-10-20T03:58:24.800Z	03:58:24   ▶ /_astro/8.P37AflL-_13FMNt.avif (before: 650kB, after: 184kB) (+2.34s) (55/210)
+2025-10-20T03:58:29.550Z	03:58:29   ▶ /_astro/b.HPMS9eDr_1fElrj.avif (before: 274kB, after: 195kB) (+5.82s) (56/210)
+2025-10-20T03:58:29.619Z	03:58:29   ▶ /_astro/8.P37AflL-_1y9IjA.avif (before: 650kB, after: 416kB) (+4.82s) (57/210)
+2025-10-20T03:58:30.343Z	03:58:30   ▶ /_astro/8.P37AflL-_Z2g6Dn3.avif (before: 650kB, after: 49kB) (+728ms) (58/210)
+2025-10-20T03:58:32.728Z	03:58:32   ▶ /_astro/d.CggGNGyL_15WFEY.avif (before: 55kB, after: 52kB) (+2.38s) (59/210)
+2025-10-20T03:58:33.164Z	03:58:33   ▶ /_astro/c.FLcJC_m6_15Vbdf.avif (before: 137kB, after: 83kB) (+3.61s) (60/210)
+2025-10-20T03:58:33.592Z	03:58:33   ▶ /_astro/1.ICbpZ-tD_DogQK.avif (before: 566kB, after: 63kB) (+864ms) (61/210)
+2025-10-20T03:58:34.175Z	03:58:34   ▶ /_astro/2.DGt6av7H_16Xm2f.avif (before: 1045kB, after: 82kB) (+1.01s) (62/210)
+2025-10-20T03:58:34.179Z	03:58:34   ▶ /_astro/1.ICbpZ-tD_ZhuHGK.avif (before: 566kB, after: 33kB) (+587ms) (63/210)
+2025-10-20T03:58:34.723Z	03:58:34   ▶ /_astro/2.DGt6av7H_b4msJ.avif (before: 1045kB, after: 42kB) (+546ms) (64/210)
+2025-10-20T03:58:35.127Z	03:58:35   ▶ /_astro/1.ICbpZ-tD_ZqSMQQ.avif (before: 566kB, after: 62kB) (+947ms) (65/210)
+2025-10-20T03:58:35.707Z	03:58:35   ▶ /_astro/2.DGt6av7H_1FhiD.avif (before: 1045kB, after: 81kB) (+984ms) (66/210)
+2025-10-20T03:58:36.805Z	03:58:36   ▶ /_astro/1.ICbpZ-tD_1IbyYc.avif (before: 566kB, after: 105kB) (+1.68s) (67/210)
+2025-10-20T03:58:37.279Z	03:58:37   ▶ /_astro/2.DGt6av7H_2bKE9G.avif (before: 1045kB, after: 137kB) (+1.57s) (68/210)
+2025-10-20T03:58:39.456Z	03:58:39   ▶ /_astro/1.ICbpZ-tD_Z1QLlmn.avif (before: 566kB, after: 176kB) (+2.65s) (69/210)
+2025-10-20T03:58:39.897Z	03:58:39   ▶ /_astro/2.DGt6av7H_Z1ocgbS.avif (before: 1045kB, after: 229kB) (+2.62s) (70/210)
+2025-10-20T03:58:45.824Z	03:58:45   ▶ /_astro/1.ICbpZ-tD_1TplUL.avif (before: 566kB, after: 452kB) (+6.36s) (71/210)
+2025-10-20T03:58:46.039Z	03:58:46   ▶ /_astro/2.DGt6av7H_1aDxNd.avif (before: 1045kB, after: 567kB) (+6.14s) (72/210)
+2025-10-20T03:58:47.046Z	03:58:47   ▶ /_astro/3.DU5vF8M3_1ucyvl.avif (before: 228kB, after: 74kB) (+1.22s) (73/210)
+2025-10-20T03:58:47.805Z	03:58:47   ▶ /_astro/3.DU5vF8M3_Z24U3mr.avif (before: 228kB, after: 44kB) (+758ms) (74/210)
+2025-10-20T03:58:49.050Z	03:58:49   ▶ /_astro/3.DU5vF8M3_Z2cBdjl.avif (before: 228kB, after: 73kB) (+1.24s) (75/210)
+2025-10-20T03:58:50.833Z	03:58:50   ▶ /_astro/1.BEOCqVs8_1mB6MJ.avif (before: 655kB, after: 492kB) (+4.80s) (76/210)
+2025-10-20T03:58:50.859Z	03:58:50   ▶ /_astro/3.DU5vF8M3_251oJR.avif (before: 228kB, after: 113kB) (+1.81s) (77/210)
+2025-10-20T03:58:51.715Z	03:58:51   ▶ /_astro/1.BEOCqVs8_1WGcwk.avif (before: 655kB, after: 64kB) (+883ms) (78/210)
+2025-10-20T03:58:53.477Z	03:58:53   ▶ /_astro/3.DU5vF8M3_8feoV.avif (before: 228kB, after: 162kB) (+2.62s) (79/210)
+2025-10-20T03:58:53.671Z	03:58:53   ▶ /_astro/1.BEOCqVs8_Z1NgbAe.avif (before: 655kB, after: 129kB) (+1.96s) (80/210)
+2025-10-20T03:58:56.813Z	03:58:56   ▶ /_astro/1.BEOCqVs8_Zu1qSQ.avif (before: 655kB, after: 214kB) (+3.14s) (81/210)
+2025-10-20T03:58:59.185Z	03:58:59   ▶ /_astro/3.DU5vF8M3_10KT3Y.avif (before: 228kB, after: 312kB) (+5.71s) (82/210)
+2025-10-20T03:59:02.747Z	03:59:02   ▶ /_astro/2.BaakhTmO_1uKVkC.avif (before: 478kB, after: 514kB) (+3.56s) (83/210)
+2025-10-20T03:59:03.428Z	03:59:03   ▶ /_astro/2.BaakhTmO_25zhGS.avif (before: 478kB, after: 69kB) (+680ms) (84/210)
+2025-10-20T03:59:03.462Z	03:59:03   ▶ /_astro/1.BEOCqVs8_ZPiMb5.avif (before: 655kB, after: 441kB) (+6.65s) (85/210)
+2025-10-20T03:59:05.135Z	03:59:05   ▶ /_astro/2.BaakhTmO_Pc8E6.avif (before: 478kB, after: 148kB) (+1.71s) (86/210)
+2025-10-20T03:59:07.899Z	03:59:07   ▶ /_astro/2.BaakhTmO_Aqmoc.avif (before: 478kB, after: 259kB) (+2.76s) (87/210)
+2025-10-20T03:59:10.502Z	03:59:10   ▶ /_astro/1.BEOCqVs8_ZKaTJ5.avif (before: 655kB, after: 548kB) (+7.04s) (88/210)
+2025-10-20T03:59:12.547Z	03:59:12   ▶ /_astro/1.BEOCqVs8_2tXCCJ.avif (before: 655kB, after: 129kB) (+2.04s) (89/210)
+2025-10-20T03:59:13.345Z	03:59:13   ▶ /_astro/1.BEOCqVs8_Z7Uew0.avif (before: 655kB, after: 62kB) (+798ms) (90/210)
+2025-10-20T03:59:13.623Z	03:59:13   ▶ /_astro/2.BaakhTmO_2rTIUK.avif (before: 478kB, after: 556kB) (+5.72s) (91/210)
+2025-10-20T03:59:15.032Z	03:59:15   ▶ /_astro/1.BEOCqVs8_17Nx6I.avif (before: 655kB, after: 129kB) (+1.69s) (92/210)
+2025-10-20T03:59:16.229Z	03:59:16   ▶ /_astro/1.BEOCqVs8_Z1Nzxf9.avif (before: 655kB, after: 77kB) (+1.19s) (93/210)
+2025-10-20T03:59:16.855Z	03:59:16   ▶ /_astro/1.BEOCqVs8_ZinGyN.avif (before: 655kB, after: 44kB) (+628ms) (94/210)
+2025-10-20T03:59:18.739Z	03:59:18   ▶ /_astro/1.BEOCqVs8_Z1Ma7yw.avif (before: 655kB, after: 129kB) (+1.89s) (95/210)
+2025-10-20T03:59:20.249Z	03:59:20   ▶ /_astro/2.BaakhTmO_1EBGYU.avif (before: 478kB, after: 646kB) (+6.63s) (96/210)
+2025-10-20T03:59:21.092Z	03:59:21   ▶ /_astro/2.BaakhTmO_2lP41B.avif (before: 478kB, after: 66kB) (+843ms) (97/210)
+2025-10-20T03:59:21.315Z	03:59:21   ▶ /_astro/1.BEOCqVs8_1XSUlv.avif (before: 655kB, after: 214kB) (+2.58s) (98/210)
+2025-10-20T03:59:21.934Z	03:59:21   ▶ /_astro/2.BaakhTmO_1bEKER.avif (before: 478kB, after: 85kB) (+842ms) (99/210)
+2025-10-20T03:59:22.580Z	03:59:22   ▶ /_astro/2.BaakhTmO_DiD0X.avif (before: 478kB, after: 46kB) (+645ms) (100/210)
+2025-10-20T03:59:24.397Z	03:59:24   ▶ /_astro/2.BaakhTmO_ClxJy.avif (before: 478kB, after: 148kB) (+1.82s) (101/210)
+2025-10-20T03:59:25.702Z	03:59:25   ▶ /_astro/9.D3mZ5C0N_nxsqU.avif (before: 690kB, after: 585kB) (+4.38s) (102/210)
+2025-10-20T03:59:26.573Z	03:59:26   ▶ /_astro/9.D3mZ5C0N_Z4H2EO.avif (before: 690kB, after: 71kB) (+873ms) (103/210)
+2025-10-20T03:59:26.710Z	03:59:26   ▶ /_astro/2.BaakhTmO_Z1NkSA3.avif (before: 478kB, after: 259kB) (+2.31s) (104/210)
+2025-10-20T03:59:28.000Z	03:59:27   ▶ /_astro/9.D3mZ5C0N_Z1k5bHB.avif (before: 690kB, after: 140kB) (+1.43s) (105/210)
+2025-10-20T03:59:30.823Z	03:59:30   ▶ /_astro/9.D3mZ5C0N_Z1yPWXv.avif (before: 690kB, after: 241kB) (+2.82s) (106/210)
+2025-10-20T03:59:32.492Z	03:59:32   ▶ /_astro/10.DVKsjUh7_1DcMS0.avif (before: 802kB, after: 644kB) (+5.78s) (107/210)
+2025-10-20T03:59:33.641Z	03:59:33   ▶ /_astro/10.DVKsjUh7_Z72sx6.avif (before: 802kB, after: 87kB) (+1.15s) (108/210)
+2025-10-20T03:59:35.912Z	03:59:35   ▶ /_astro/10.DVKsjUh7_Z22FLg0.avif (before: 802kB, after: 174kB) (+2.27s) (109/210)
+2025-10-20T03:59:36.579Z	03:59:36   ▶ /_astro/9.D3mZ5C0N_1kGg23.avif (before: 690kB, after: 539kB) (+5.76s) (110/210)
+2025-10-20T03:59:39.222Z	03:59:39   ▶ /_astro/10.DVKsjUh7_16R3P2.avif (before: 802kB, after: 287kB) (+3.31s) (111/210)
+2025-10-20T03:59:43.706Z	03:59:43   ▶ /_astro/9.D3mZ5C0N_xoe6d.avif (before: 690kB, after: 650kB) (+7.13s) (112/210)
+2025-10-20T03:59:44.560Z	03:59:44   ▶ /_astro/9.D3mZ5C0N_bxIDT.avif (before: 690kB, after: 68kB) (+849ms) (113/210)
+2025-10-20T03:59:45.544Z	03:59:45   ▶ /_astro/9.D3mZ5C0N_ZXByGP.avif (before: 690kB, after: 83kB) (+983ms) (114/210)
+2025-10-20T03:59:46.068Z	03:59:46   ▶ /_astro/9.D3mZ5C0N_Z1vXGlJ.avif (before: 690kB, after: 47kB) (+523ms) (115/210)
+2025-10-20T03:59:46.519Z	03:59:46   ▶ /_astro/10.DVKsjUh7_2eqOUq.avif (before: 802kB, after: 587kB) (+7.30s) (116/210)
+2025-10-20T03:59:47.464Z	03:59:47   ▶ /_astro/9.D3mZ5C0N_Z1wULC9.avif (before: 690kB, after: 140kB) (+1.40s) (117/210)
+2025-10-20T03:59:50.077Z	03:59:50   ▶ /_astro/9.D3mZ5C0N_16yTQb.avif (before: 690kB, after: 241kB) (+2.61s) (118/210)
+2025-10-20T03:59:53.787Z	03:59:53   ▶ /_astro/11.CGAUFKLc_1G012j.avif (before: 539kB, after: 397kB) (+3.71s) (119/210)
+2025-10-20T03:59:54.523Z	03:59:54   ▶ /_astro/11.CGAUFKLc_Z1DP6nK.avif (before: 539kB, after: 49kB) (+733ms) (120/210)
+2025-10-20T03:59:54.923Z	03:59:54   ▶ /_astro/10.DVKsjUh7_ZeK9av.avif (before: 802kB, after: 716kB) (+8.40s) (121/210)
+2025-10-20T03:59:55.928Z	03:59:55   ▶ /_astro/11.CGAUFKLc_Z1NxTWM.avif (before: 539kB, after: 101kB) (+1.41s) (122/210)
+2025-10-20T03:59:55.960Z	03:59:55   ▶ /_astro/10.DVKsjUh7_Z1XMgIS.avif (before: 802kB, after: 84kB) (+1.04s) (123/210)
+2025-10-20T03:59:57.340Z	03:59:57   ▶ /_astro/10.DVKsjUh7_F5Nq0.avif (before: 802kB, after: 103kB) (+1.38s) (124/210)
+2025-10-20T03:59:58.050Z	03:59:58   ▶ /_astro/10.DVKsjUh7_Z724fb.avif (before: 802kB, after: 59kB) (+710ms) (125/210)
+2025-10-20T03:59:58.118Z	03:59:58   ▶ /_astro/11.CGAUFKLc_Z1at16Y.avif (before: 539kB, after: 170kB) (+2.19s) (126/210)
+2025-10-20T04:00:00.215Z	04:00:00   ▶ /_astro/10.DVKsjUh7_Z1tAIo9.avif (before: 802kB, after: 174kB) (+2.16s) (127/210)
+2025-10-20T04:00:03.108Z	04:00:03   ▶ /_astro/11.CGAUFKLc_Z1iRcwt.avif (before: 539kB, after: 363kB) (+4.99s) (128/210)
+2025-10-20T04:00:03.680Z	04:00:03   ▶ /_astro/10.DVKsjUh7_1wwcmc.avif (before: 802kB, after: 287kB) (+3.46s) (129/210)
+2025-10-20T04:00:07.455Z	04:00:07   ▶ /_astro/12.VakdN1L3_Z1cni8d.avif (before: 538kB, after: 423kB) (+3.78s) (130/210)
+2025-10-20T04:00:08.551Z	04:00:08   ▶ /_astro/11.CGAUFKLc_Zq2sjI.avif (before: 539kB, after: 443kB) (+5.44s) (131/210)
+2025-10-20T04:00:08.616Z	04:00:08   ▶ /_astro/12.VakdN1L3_ZI6CzJ.avif (before: 538kB, after: 93kB) (+1.16s) (132/210)
+2025-10-20T04:00:09.284Z	04:00:09   ▶ /_astro/11.CGAUFKLc_Z1Ak8k6.avif (before: 539kB, after: 48kB) (+733ms) (133/210)
+2025-10-20T04:00:10.328Z	04:00:10   ▶ /_astro/11.CGAUFKLc_1NcGKG.avif (before: 539kB, after: 59kB) (+1.04s) (134/210)
+2025-10-20T04:00:10.794Z	04:00:10   ▶ /_astro/11.CGAUFKLc_Z1KMAmT.avif (before: 539kB, after: 33kB) (+465ms) (135/210)
+2025-10-20T04:00:10.925Z	04:00:10   ▶ /_astro/12.VakdN1L3_Z1RoB4Q.avif (before: 538kB, after: 190kB) (+2.31s) (136/210)
+2025-10-20T04:00:12.259Z	04:00:12   ▶ /_astro/11.CGAUFKLc_1OC7rj.avif (before: 539kB, after: 101kB) (+1.47s) (137/210)
+2025-10-20T04:00:14.490Z	04:00:14   ▶ /_astro/11.CGAUFKLc_vu1xp.avif (before: 539kB, after: 170kB) (+2.23s) (138/210)
+2025-10-20T04:00:15.211Z	04:00:15   ▶ /_astro/12.VakdN1L3_ZUunGo.avif (before: 538kB, after: 318kB) (+4.28s) (139/210)
+2025-10-20T04:00:16.544Z	04:00:16   ▶ /_astro/12.VakdN1L3_zSEzl.avif (before: 538kB, after: 90kB) (+1.34s) (140/210)
+2025-10-20T04:00:19.228Z	04:00:19   ▶ /_astro/13.Cy87Clsd_ZpwfTv.avif (before: 591kB, after: 408kB) (+4.74s) (141/210)
+2025-10-20T04:00:20.364Z	04:00:20   ▶ /_astro/13.Cy87Clsd_Z15ulf.avif (before: 591kB, after: 83kB) (+1.14s) (142/210)
+2025-10-20T04:00:20.580Z	04:00:20   ▶ /_astro/14.D-vaboft_rvTLf.avif (before: 472kB, after: 305kB) (+4.03s) (143/210)
+2025-10-20T04:00:21.476Z	04:00:21   ▶ /_astro/14.D-vaboft_19ECSl.avif (before: 472kB, after: 38kB) (+897ms) (144/210)
+2025-10-20T04:00:22.071Z	04:00:22   ▶ /_astro/13.Cy87Clsd_Z1VIN49.avif (before: 591kB, after: 154kB) (+1.70s) (145/210)
+2025-10-20T04:00:23.535Z	04:00:23   ▶ /_astro/14.D-vaboft_ZKXEOy.avif (before: 472kB, after: 79kB) (+2.06s) (146/210)
+2025-10-20T04:00:25.046Z	04:00:25   ▶ /_astro/13.Cy87Clsd_1cO21S.avif (before: 591kB, after: 224kB) (+2.98s) (147/210)
+2025-10-20T04:00:26.179Z	04:00:26   ▶ /_astro/14.D-vaboft_2nzagt.avif (before: 472kB, after: 129kB) (+2.64s) (148/210)
+2025-10-20T04:00:30.736Z	04:00:30   ▶ /_astro/13.Cy87Clsd_aGL7U.avif (before: 591kB, after: 373kB) (+5.69s) (149/210)
+2025-10-20T04:00:31.661Z	04:00:31   ▶ /_astro/14.D-vaboft_12JVNF.avif (before: 472kB, after: 264kB) (+5.48s) (150/210)
+2025-10-20T04:00:31.798Z	04:00:31   ▶ /_astro/13.Cy87Clsd_Z1RPix2.avif (before: 591kB, after: 80kB) (+1.06s) (151/210)
+2025-10-20T04:00:32.554Z	04:00:32   ▶ /_astro/14.D-vaboft_ZH5air.avif (before: 472kB, after: 37kB) (+896ms) (152/210)
+2025-10-20T04:00:35.687Z	04:00:35   ▶ /_astro/15.DAVUoAr-_Z2v57I7.avif (before: 701kB, after: 559kB) (+3.88s) (153/210)
+2025-10-20T04:00:36.706Z	04:00:36   ▶ /_astro/15.DAVUoAr-_1E2d4D.avif (before: 701kB, after: 71kB) (+1.02s) (154/210)
+2025-10-20T04:00:38.419Z	04:00:38   ▶ /_astro/15.DAVUoAr-_1ujouB.avif (before: 701kB, after: 142kB) (+1.71s) (155/210)
+2025-10-20T04:00:40.238Z	04:00:40   ▶ /_astro/16.aKXPusS2_rGE19.avif (before: 468kB, after: 356kB) (+7.68s) (156/210)
+2025-10-20T04:00:41.012Z	04:00:41   ▶ /_astro/15.DAVUoAr-_28oilp.avif (before: 701kB, after: 245kB) (+2.59s) (157/210)
+2025-10-20T04:00:41.328Z	04:00:41   ▶ /_astro/16.aKXPusS2_Z2knUwQ.avif (before: 468kB, after: 43kB) (+1.09s) (158/210)
+2025-10-20T04:00:43.455Z	04:00:43   ▶ /_astro/16.aKXPusS2_Z1wg8xI.avif (before: 468kB, after: 77kB) (+2.13s) (159/210)
+2025-10-20T04:00:46.359Z	04:00:46   ▶ /_astro/16.aKXPusS2_27OaAR.avif (before: 468kB, after: 117kB) (+2.90s) (160/210)
+2025-10-20T04:00:47.276Z	04:00:47   ▶ /_astro/15.DAVUoAr-_ZpKcsX.avif (before: 701kB, after: 525kB) (+6.26s) (161/210)
+2025-10-20T04:00:48.212Z	04:00:48   ▶ /_astro/15.DAVUoAr-_1Hxb8i.avif (before: 701kB, after: 68kB) (+935ms) (162/210)
+2025-10-20T04:00:51.157Z	04:00:51   ▶ /_astro/16.aKXPusS2_ZRh01r.avif (before: 468kB, after: 204kB) (+4.80s) (163/210)
+2025-10-20T04:00:51.178Z	04:00:51   ▶ /_astro/17.CJyldHlg_1WLrpO.avif (before: 333kB, after: 328kB) (+2.97s) (164/210)
+2025-10-20T04:00:52.152Z	04:00:52   ▶ /_astro/16.aKXPusS2_Z1HO7M5.avif (before: 468kB, after: 43kB) (+995ms) (165/210)
+2025-10-20T04:00:52.455Z	04:00:52   ▶ /_astro/17.CJyldHlg_2bkCQU.avif (before: 333kB, after: 102kB) (+1.28s) (166/210)
+2025-10-20T04:00:55.306Z	04:00:55   ▶ /_astro/17.CJyldHlg_1rRrU4.avif (before: 333kB, after: 205kB) (+2.85s) (167/210)
+2025-10-20T04:01:00.067Z	04:01:00   ▶ /_astro/18.DvozYAdy_ZR4Thp.avif (before: 591kB, after: 506kB) (+7.91s) (168/210)
+2025-10-20T04:01:00.281Z	04:01:00   ▶ /_astro/17.CJyldHlg_Z285sqv.avif (before: 333kB, after: 325kB) (+4.97s) (169/210)
+2025-10-20T04:01:01.116Z	04:01:01   ▶ /_astro/18.DvozYAdy_ZeTM2F.avif (before: 591kB, after: 54kB) (+1.05s) (170/210)
+2025-10-20T04:01:01.489Z	04:01:01   ▶ /_astro/17.CJyldHlg_Z1Wt8oA.avif (before: 333kB, after: 99kB) (+1.21s) (171/210)
+2025-10-20T04:01:02.591Z	04:01:02   ▶ /_astro/19.CvoJ1aNu_23FGlR.avif (before: 77kB, after: 63kB) (+1.10s) (172/210)
+2025-10-20T04:01:03.093Z	04:01:03   ▶ /_astro/18.DvozYAdy_ycYVs.avif (before: 591kB, after: 104kB) (+1.97s) (173/210)
+2025-10-20T04:01:03.271Z	04:01:03   ▶ /_astro/19.CvoJ1aNu_Z2w8ord.avif (before: 77kB, after: 30kB) (+683ms) (174/210)
+2025-10-20T04:01:04.484Z	04:01:04   ▶ /_astro/19.CvoJ1aNu_2jpvDP.avif (before: 77kB, after: 50kB) (+1.21s) (175/210)
+2025-10-20T04:01:06.130Z	04:01:06   ▶ /_astro/19.CvoJ1aNu_Z2nClU3.avif (before: 77kB, after: 69kB) (+1.65s) (176/210)
+2025-10-20T04:01:06.176Z	04:01:06   ▶ /_astro/18.DvozYAdy_ZQSOHS.avif (before: 591kB, after: 166kB) (+3.09s) (177/210)
+2025-10-20T04:01:06.767Z	04:01:06   ▶ /_astro/19.CvoJ1aNu_1DAYcM.avif (before: 77kB, after: 29kB) (+637ms) (178/210)
+2025-10-20T04:01:12.645Z	04:01:12   ▶ /_astro/18.DvozYAdy_Z2c3yk0.avif (before: 591kB, after: 300kB) (+6.47s) (179/210)
+2025-10-20T04:01:13.712Z	04:01:13   ▶ /_astro/18.DvozYAdy_mE0H6.avif (before: 591kB, after: 52kB) (+1.07s) (180/210)
+2025-10-20T04:01:14.382Z	04:01:14   ▶ /_astro/21.CTXpcUNK_Zv1I68.avif (before: 43kB, after: 41kB) (+669ms) (181/210)
+2025-10-20T04:01:15.096Z	04:01:15   ▶ /_astro/21.CTXpcUNK_BerMI.avif (before: 43kB, after: 33kB) (+714ms) (182/210)
+2025-10-20T04:01:15.779Z	04:01:15   ▶ /_astro/21.CTXpcUNK_Z2kFJQI.avif (before: 43kB, after: 32kB) (+683ms) (183/210)
+2025-10-20T04:01:17.643Z	04:01:17   ▶ /_astro/1.Dr9g_rja_1DiIJ9.avif (before: 214kB, after: 63kB) (+1.86s) (184/210)
+2025-10-20T04:01:19.577Z	04:01:19   ▶ /_astro/spareroom.DecZgRvq_Z2rPgvm.avif (before: 808kB, after: 167kB) (+1.93s) (185/210)
+2025-10-20T04:01:21.442Z	04:01:21   ▶ /_astro/spareroom.DecZgRvq_Z1DYsPT.avif (before: 808kB, after: 167kB) (+1.86s) (186/210)
+2025-10-20T04:01:23.288Z	04:01:23   ▶ /_astro/studioworkshop.D1pxufYr_Z2tHalk.avif (before: 691kB, after: 140kB) (+1.84s) (187/210)
+2025-10-20T04:01:24.858Z	04:01:24   ▶ /_astro/studioworkshop.D1pxufYr_i2mRJ.avif (before: 691kB, after: 140kB) (+1.57s) (188/210)
+2025-10-20T04:01:25.842Z	04:01:25   ▶ /_astro/20.BdyWHphN_ZF7lPA.avif (before: 6395kB, after: 3085kB) (+19.07s) (189/210)
+2025-10-20T04:01:26.495Z	04:01:26   ▶ /_astro/homeoffice.DerzhdDS_Z2l5O8s.avif (before: 625kB, after: 122kB) (+1.63s) (190/210)
+2025-10-20T04:01:27.523Z	04:01:27   ▶ /_astro/20.BdyWHphN_Z1pTFmf.avif (before: 6395kB, after: 90kB) (+1.68s) (191/210)
+2025-10-20T04:01:28.180Z	04:01:28   ▶ /_astro/homeoffice.DerzhdDS_ZD80lr.avif (before: 625kB, after: 122kB) (+1.68s) (192/210)
+2025-10-20T04:01:28.756Z	04:01:28   ▶ /_astro/flatpack0.9LaL6d5H_ZNoguC.avif (before: 459kB, after: 36kB) (+576ms) (193/210)
+2025-10-20T04:01:30.441Z	04:01:30   ▶ /_astro/flatpack0.9LaL6d5H_1x32fV.avif (before: 459kB, after: 101kB) (+1.68s) (194/210)
+2025-10-20T04:01:30.576Z	04:01:30   ▶ /_astro/20.BdyWHphN_1uYRay.avif (before: 6395kB, after: 200kB) (+3.05s) (195/210)
+2025-10-20T04:01:31.116Z	04:01:31   ▶ /_astro/flatpack1.CMaoFtdi_ZEwEpC.avif (before: 635kB, after: 61kB) (+674ms) (196/210)
+2025-10-20T04:01:33.665Z	04:01:33   ▶ /_astro/flatpack1.CMaoFtdi_1FTDkV.avif (before: 635kB, after: 222kB) (+2.55s) (197/210)
+2025-10-20T04:01:34.271Z	04:01:34   ▶ /_astro/flatpack2.famtJqJt_2eCHmS.avif (before: 701kB, after: 40kB) (+606ms) (198/210)
+2025-10-20T04:01:35.335Z	04:01:35   ▶ /_astro/20.BdyWHphN_Z1AFyvV.avif (before: 6395kB, after: 346kB) (+4.76s) (199/210)
+2025-10-20T04:01:35.879Z	04:01:35   ▶ /_astro/flatpack2.famtJqJt_Zu77Fu.avif (before: 701kB, after: 141kB) (+1.61s) (200/210)
+2025-10-20T04:01:36.379Z	04:01:36   ▶ /_astro/flatpack3.DhSUEWIZ_dBurv.avif (before: 568kB, after: 34kB) (+499ms) (201/210)
+2025-10-20T04:01:38.183Z	04:01:38   ▶ /_astro/flatpack3.DhSUEWIZ_Z2v8kAR.avif (before: 568kB, after: 111kB) (+1.80s) (202/210)
+2025-10-20T04:01:38.748Z	04:01:38   ▶ /_astro/flatpack4.Ch4DWR2o_Z131lv6.avif (before: 520kB, after: 30kB) (+564ms) (203/210)
+2025-10-20T04:01:40.473Z	04:01:40   ▶ /_astro/flatpack4.Ch4DWR2o_1ipWfs.avif (before: 520kB, after: 98kB) (+1.72s) (204/210)
+2025-10-20T04:01:41.256Z	04:01:41   ▶ /_astro/flatpackfinal.DrkuqIzH_ZbTa1g.avif (before: 846kB, after: 36kB) (+782ms) (205/210)
+2025-10-20T04:01:43.743Z	04:01:43   ▶ /_astro/flatpackfinal.DrkuqIzH_2c9K6O.avif (before: 846kB, after: 124kB) (+2.49s) (206/210)
+2025-10-20T04:01:44.696Z	04:01:44   ▶ /_astro/20.BdyWHphN_Z2p6w43.avif (before: 6395kB, after: 711kB) (+9.36s) (207/210)
+2025-10-20T04:01:44.791Z	04:01:44   ▶ /_astro/orchard1.BPoXmiKZ_n0G8j.avif (before: 359kB, after: 90kB) (+1.05s) (208/210)
+2025-10-20T04:01:45.704Z	04:01:45   ▶ /_astro/orchard1.BPoXmiKZ_Z3BIiB.avif (before: 359kB, after: 90kB) (+913ms) (209/210)
+2025-10-20T04:01:46.123Z	04:01:46   ▶ /_astro/20.BdyWHphN_vwARY.avif (before: 6395kB, after: 87kB) (+1.43s) (210/210)
+2025-10-20T04:01:46.126Z	04:01:46 ✓ Completed in 268.95s.
+2025-10-20T04:01:46.126Z	
+2025-10-20T04:01:46.163Z	04:01:46 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+2025-10-20T04:01:46.163Z	04:01:46 [build] 23 page(s) built in 277.93s
+2025-10-20T04:01:46.163Z	04:01:46 [build] Complete!
+2025-10-20T04:01:46.239Z	Success: Build command completed
+2025-10-20T04:01:46.240Z	Executing user deploy command: npx wrangler deploy
+2025-10-20T04:01:47.313Z	npm warn exec The following package was not found and will be installed: wrangler@4.43.0
+2025-10-20T04:01:54.916Z	
+2025-10-20T04:01:54.916Z	 ⛅️ wrangler 4.43.0
+2025-10-20T04:01:54.917Z	───────────────────
+2025-10-20T04:01:57.227Z	🌀 Building list of assets...
+2025-10-20T04:01:57.232Z	✨ Read 407 files from the assets directory /opt/buildhome/repo/dist
+2025-10-20T04:01:57.755Z	🌀 Starting asset upload...
+2025-10-20T04:02:00.320Z	🌀 Found 27 new or modified static assets to upload. Proceeding with upload...
+2025-10-20T04:02:00.320Z	+ /_astro/GallerySlider.astro_astro_type_script_index_0_lang.z-eYQOh4.js
+2025-10-20T04:02:00.320Z	+ /404.html
+2025-10-20T04:02:00.320Z	+ /projects/project-5/index.html
+2025-10-20T04:02:00.320Z	+ /projects/project-6/index.html
+2025-10-20T04:02:00.320Z	+ /projects/project-2/index.html
+2025-10-20T04:02:00.320Z	+ /blog/post-1/index.html
+2025-10-20T04:02:00.320Z	+ /reviews/index.html
+2025-10-20T04:02:00.320Z	+ /projects/index.html
+2025-10-20T04:02:00.320Z	+ /about/index.html
+2025-10-20T04:02:00.320Z	+ /_astro/HomeServicesSection.astro_astro_type_script_index_0_lang.BiUMnPI0.js
+2025-10-20T04:02:00.321Z	+ /privacy-policy/index.html
+2025-10-20T04:02:00.321Z	+ /projects/project-7/index.html
+2025-10-20T04:02:00.321Z	+ /projects/project-4/index.html
+2025-10-20T04:02:00.321Z	+ /contact/index.html
+2025-10-20T04:02:00.321Z	+ /blog/post-2/index.html
+2025-10-20T04:02:00.321Z	+ /faqs/index.html
+2025-10-20T04:02:00.321Z	+ /elements/index.html
+2025-10-20T04:02:00.321Z	+ /_astro/autoplay.B3sd7kYm.js
+2025-10-20T04:02:00.321Z	+ /_astro/Testimonial.astro_astro_type_script_index_0_lang.CIIS9Gyi.js
+2025-10-20T04:02:00.321Z	+ /terms-and-conditions/index.html
+2025-10-20T04:02:00.321Z	+ /projects/project-1/index.html
+2025-10-20T04:02:00.321Z	+ /projects/project-3/index.html
+2025-10-20T04:02:00.321Z	+ /blog/post-3/index.html
+2025-10-20T04:02:00.321Z	+ /gallery/index.html
+2025-10-20T04:02:00.321Z	+ /blog/index.html
+2025-10-20T04:02:00.321Z	+ /services/index.html
+2025-10-20T04:02:00.321Z	+ /index.html
+2025-10-20T04:02:02.334Z	Uploaded 9 of 27 assets
+2025-10-20T04:02:02.356Z	Uploaded 18 of 27 assets
+2025-10-20T04:02:02.406Z	Uploaded 27 of 27 assets
+2025-10-20T04:02:02.406Z	✨ Success! Uploaded 27 files (348 already uploaded) (2.08 sec)
+2025-10-20T04:02:02.406Z	
+2025-10-20T04:02:02.407Z	Total Upload: 0.33 KiB / gzip: 0.24 KiB
+2025-10-20T04:02:03.189Z	
+2025-10-20T04:02:03.231Z	✘ [ERROR] A request to the Cloudflare API (/accounts/c734cdf71fe6fd5511a2f8a2447ed03f/workers/scripts/ecoshack-astro-website/versions) failed.
+2025-10-20T04:02:03.232Z	
+2025-10-20T04:02:03.232Z	  Invalid _redirects configuration:
+2025-10-20T04:02:03.234Z	  Line 5: Valid status codes are 200, 301, 302 (default), 303, 307, or 308. Got 0.
+2025-10-20T04:02:03.234Z	  Line 6: Valid status codes are 200, 301, 302 (default), 303, 307, or 308. Got 0.
+2025-10-20T04:02:03.235Z	  Line 8: Valid status codes are 200, 301, 302 (default), 303, 307, or 308. Got 0. [code: 10021]
+2025-10-20T04:02:03.235Z	
+2025-10-20T04:02:03.235Z	  
+2025-10-20T04:02:03.235Z	  If you think this is a bug, please open an issue at: https://github.com/cloudflare/workers-sdk/issues/new/choose
+2025-10-20T04:02:03.235Z	
+2025-10-20T04:02:03.235Z	
+2025-10-20T04:02:03.235Z	
+2025-10-20T04:02:03.235Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2025-10-20T04:02:03.261Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2025-10-20_04-01-54_495.log"
+2025-10-20T04:02:03.329Z	Failed: error occurred while running deploy command

@@ -1,13 +1,10 @@
 # Astro will naturally handle routing, but we can add specific redirects if needed
 
-# Handle custom domain routing issues
-# Force HTTPS for custom domains - aggressive enforcement
-http://ecoshack.com.au/* https://ecoshack.com.au/:splat 301!
-http://www.ecoshack.com.au/* https://www.ecoshack.com.au/:splat 301!
-# Catch any HTTP attempts
-http://* https://:splat 301!
+# Force HTTPS for working domains
+http://ecoshack-astro-website.isaac-c73.workers.dev/* https://ecoshack-astro-website.isaac-c73.workers.dev/:splat 301
+http://ecoshack-astro.oneclickit.com.au/* https://ecoshack-astro.oneclickit.com.au/:splat 301
 
-# Ensure trailing slash consistency
+# Ensure trailing slash consistency for main pages
 /blog /blog/ 301
 /projects /projects/ 301
 /about /about/ 301
@@ -16,15 +13,3 @@ http://* https://:splat 301!
 /gallery /gallery/ 301
 /reviews /reviews/ 301
 /faqs /faqs/ 301
-/career /career/ 301
-
-# Handle SPA-like routing for custom domains
-/blog/* /blog/:splat 200
-/projects/* /projects/:splat 200
-/about/* /about/:splat 200
-/contact/* /contact/:splat 200
-/services/* /services/:splat 200
-/gallery/* /gallery/:splat 200
-/reviews/* /reviews/:splat 200
-/faqs/* /faqs/:splat 200
-/career/* /career/:splat 200
