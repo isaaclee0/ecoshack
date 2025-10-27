@@ -112,7 +112,7 @@ projects:
   subtitle: "PORTFOLIO"
   button:
     enable: true
-    label: "View All Projects"
+    label: "View All"
     link: "/projects"
   # All projects in the `src/content/projects`
 ---

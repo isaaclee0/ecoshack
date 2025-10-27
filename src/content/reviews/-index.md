@@ -6,45 +6,18 @@ description: "We encourage our team to fearlessly challenge conventions and pion
 image: "/images/banner-testimonial.jpg"
 
 testimonials:
-  - name: "William Elijah Jr."
-    designation: "Managing Director"
-    avatar: "/images/reviews/1.png"
-    content: "We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision."
+  - name: "Kristy"
+    content: "I cried when the roof went on, my cabin dream came to life. Im as happy now as I was 2 years ago, has withstood gale force winds and looks amazing."
     featured: true
 
-  - name: "Lucas Benjamin"
-    designation: "Managing Director"
-    avatar: "/images/reviews/1.png"
-    content: "Thanks to Nextspace, my home has been transformed into a sanctuary that reflects my personality and lifestyle."
+  - name: "Claire Dawson"
+    content: "Mark built us a stunning reclaimed timber and metal composting toilet and shower that exceeded every expectation. His craftsmanship, reliability and attention to detail are second to none - I'd hire him again in a heartbeat."
     featured: true
 
-  - name: "Marvin McKinney"
-    designation: "Happy Homeowner"
-    avatar: "/images/reviews/1.png"
-    content: "I had the pleasure of working with Nextspace on a complete renovation of my home, and I couldn't be happier with the results."
-    featured: true
+#  - name: "Marvin McKinney"
+#    designation: "Happy Homeowner"
+#    avatar: "/images/reviews/1.png"
+#    content: "I had the pleasure of working with Nextspace on a complete renovation of my home, and I couldn't be happier with the results."
+#    featured: true
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: ""
-    content: "We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision."
-    featured: false
-
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: ""
-    content: "We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision."
-    featured: false
-
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: ""
-    content: "We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision."
-    featured: false
-
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: ""
-    content: "We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision."
-    featured: false
 ---

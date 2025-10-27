@@ -28,21 +28,7 @@ const reviewsIndex = (await getEntry(
                 i % 2 !== 0 ? "md:flex-row-reverse" : ""
               }`}
             >
-              <div
-                data-aos={i % 2 === 0 ? "fade-right-sm" : "fade-left-sm"}
-                data-aos-delay="300"
-                class="col-10 lg:col-5"
-              >
-                <ImageMod
-                  src={testimonial.avatar!}
-                  alt={testimonial.name}
-                  width={600}
-                  height={800}
-                  format="avif"
-                  quality={85}
-                  loading="lazy"
-                />
-              </div>
+
 
               <div class="col-10 lg:col-6">
                 <p
@@ -61,7 +47,6 @@ const reviewsIndex = (await getEntry(
                     class="font-medium text-2xl relative pl-5 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2.5 before:h-2.5 before:rounded-full before:bg-current"
                     set:text={markdownify(testimonial.name)}
                   />
-                  <p set:text={markdownify(testimonial.designation)} />
                 </div>
               </div>
             </div>

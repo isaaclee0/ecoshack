@@ -1,6 +1,6 @@
 ---
 import Button from "@/components/Button.astro";
-import ProjectCard from "@/components/ProjectCard.astro";
+import BlogCard from "@/components/BlogCard.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import type { CollectionEntry } from "astro:content";
@@ -9,9 +9,14 @@ type Props = {
   projects: CollectionEntry<"homepage">["data"]["projects"];
 };
 
-const projectsSingle = (await getSinglePage("projects")).filter(
-  (f) => f.data.featured_in_homepage
-);
+const blogPosts = (await getSinglePage("blog"))
+  .filter((f) => f.data.featured)
+  .sort((a, b) => {
+    const dateA = a.data.date ? new Date(a.data.date).getTime() : 0;
+    const dateB = b.data.date ? new Date(b.data.date).getTime() : 0;
+    return dateB - dateA;
+  })
+  .slice(0, 4);
 
 const { projects } = Astro.props;
 const { enable, title, subtitle } = projects;
@@ -21,25 +26,25 @@ const { enable, title, subtitle } = projects;
   enable && (
     <section class="section">
       <div class="container">
-        <div class="md:columns-2 gap-x-[150px]">
-          {/* section title */}
-          <div class="mb-[5rem] lg:mb-[11rem] max-md:text-center">
-            <p
-              data-aos="fade-up-sm"
-              data-aos-delay="150"
-              class="font-medium uppercase"
-              set:html={markdownify(subtitle)}
-            />
-            <h2
-              data-aos="fade-up-sm"
-              data-aos-delay="250"
-              class="mt-3 font-medium"
-              set:html={markdownify(title)}
-            />
-          </div>
+        {/* section title */}
+        <div class="mb-[5rem] lg:mb-[8rem] max-md:text-center">
+          <p
+            data-aos="fade-up-sm"
+            data-aos-delay="150"
+            class="font-medium uppercase"
+            set:html={markdownify(subtitle)}
+          />
+          <h2
+            data-aos="fade-up-sm"
+            data-aos-delay="250"
+            class="mt-3 font-medium"
+            set:html={markdownify(title)}
+          />
+        </div>
 
-          {projectsSingle?.map((project, i) => (
-            <ProjectCard project={project} index={i} />
+        <div class="row">
+          {blogPosts?.map((post, i) => (
+            <BlogCard data={post} index={i} />
           ))}
         </div>
 

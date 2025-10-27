@@ -212,12 +212,12 @@ const {
             </div>
 
             <div class="lg:col-8">
-              <div class="md:columns-2 gap-x-[100px]">
+              <div class="flex justify-center">
                 {team_section.members?.map((t, i) => (
                   <div
                     data-aos="fade-up-sm"
                     data-aos-delay={i * 100 + 150}
-                    class="mt-[5rem] last:mb-0 group relative max-md:w-[80%] mx-auto"
+                    class="mt-[5rem] last:mb-0 group relative w-[80%] max-w-[400px] mx-auto"
                   >
                     <div class="overflow-hidden">
                       <ImageMod
@@ -232,12 +232,15 @@ const {
                       />
                     </div>
 
-                    <div class="flex gap-2 flex-wrap items-center pt-8 justify-between">
+                    <div class="pt-8 text-center">
                       <h3
-                        class="h5 font-medium"
+                        class="h5 font-medium mb-2"
                         set:html={markdownify(t.name)}
                       />
-                      <p set:html={markdownify(t.designation!)} />
+                      <p
+                        class="text-text-light"
+                        set:html={markdownify(t.designation)}
+                      />
                     </div>
                   </div>
                 ))}

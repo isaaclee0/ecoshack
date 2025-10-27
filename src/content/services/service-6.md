@@ -3,7 +3,7 @@ title: "Custom Design & Build"
 meta_title: "Custom Design & Build Services - Eco Shack"
 description: "Bespoke outdoor structures designed and built to your exact specifications. From concept to completion, we bring your vision to life."
 date: 2025-05-06T05:00:00Z
-image: "/images/services/service-6.png"
+image: "/images/gallery/12.jpg"
 categories: ["custom"]
 featured_in_homepage: false
 features:

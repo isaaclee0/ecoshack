@@ -16,9 +16,9 @@ features:
   - name: "Irrigation Systems"
     description: "Design and install efficient irrigation systems to ensure your orchard receives optimal water distribution."
   - name: "Ongoing Maintenance"
-    description: "Comprehensive maintenance services including pruning, pest management, fertilization, and seasonal care."
+    description: "Comprehensive maintenance services including pruning, pest management, fertilisation, and seasonal care."
   - name: "Harvest Support"
-    description: "Guidance and support during harvest season to maximize yield and fruit quality."
+    description: "Guidance and support during harvest season to maximise yield and fruit quality."
 draft: false
 ---
 

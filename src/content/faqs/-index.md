@@ -22,5 +22,5 @@ list:
   - question: "Do you offer installation services?"
     answer: "Yes, we provide professional installation for all our structures. Our experienced team will ensure your EcoShack is properly constructed and ready for immediate use."
   - question: "Can EcoShack structures be customized?"
-    answer: "Absolutely! We offer extensive customization options including size, layout, materials, finishes, and features. We work closely with clients to create structures that perfectly match their needs and aesthetic preferences."
+    answer: "Absolutely! We offer extensive customisation options including size, layout, materials, finishes, and features. We work closely with clients to create structures that perfectly match their needs and aesthetic preferences."
 ---

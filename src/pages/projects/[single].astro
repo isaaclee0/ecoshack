@@ -1,28 +1,33 @@
 ---
+import BlogCard from "@/components/BlogCard.astro";
+import Button from "@/components/Button.astro";
 import ImageMod from "@/components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
+import dateFormat from "@/lib/utils/dateFormat";
+import similarItems from "@/lib/utils/similarItems";
 import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction.astro";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
-  const FOLDER = "projects";
-  const projects = await getSinglePage(FOLDER);
+  const posts = await getSinglePage("blog");
 
-  const paths = projects.map((project) => ({
+  const paths = posts.map((post) => ({
     params: {
-      single: project.id,
+      single: post.id,
     },
-    props: { project },
+    props: { post },
   }));
   return paths;
 }
 
-const { project } = Astro.props;
-const { Content } = await render(project);
-const { title, meta_title, description, image, client_name, project_type } =
-  project.data;
+const { post } = Astro.props;
+const { Content } = await render(post);
+const { title, meta_title, description, image, date } = post.data;
+
+const posts = await getSinglePage("blog");
+const similarPosts = similarItems(post, posts);
 ---
 
 <Base
@@ -32,42 +37,35 @@ const { title, meta_title, description, image, client_name, project_type } =
   image={image}
 >
   <section>
-    <div class="container">
-      <div class="row">
+    <div class="bg-primary row justify-center text-center">
+      <div
+        data-aos="zoom-in-sm"
+        data-aos-delay="200"
+        class="col-10 xl:col-7 pt-[16.25rem] pb-[10rem] text-white"
+      >
+        {date && <span>Posted on {dateFormat(date)}</span>}
+
         <h1
-          class="lg:text-[6rem] pt-[12.5rem] pb-[8.125rem] text-center"
+          class="text-center pt-3.5 text-white"
           set:html={markdownify(title)}
         />
       </div>
+    </div>
+    <div class="container section-sm pb-0">
       <div class="row justify-center">
-        <div class="col-11 mx-auto lg:col-3">
-          <div
-            class="max-lg:flex flex-wrap justify-between lg:sticky gap-10 top-30 pb-10"
-          >
-            <div>
-              <p class="text-primary text-lg mb-3">Client Name</p>
-              <p class="text-lg" set:html={markdownify(client_name!)} />
-            </div>
-
-            <div class="lg:pt-10">
-              <p class="text-primary text-lg mb-3">Project Type</p>
-              <p class="text-lg" set:html={markdownify(project_type!)} />
-            </div>
-          </div>
-        </div>
-        <article class="col-11 mx-auto lg:col-9">
+        <article class="col-11 mx-auto lg:col-10">
           {
             image && (
-              <div class="pb-20">
+              <div class="pb-10">
                 <ImageMod
                   src={image}
-                  height={500}
+                  height={800}
                   width={1200}
                   alt={title}
                   format="avif"
                   quality={90}
                   loading="eager"
-                  class="w-full"
+                  class="object-cover aspect-[16/9] w-full"
                 />
               </div>
             )
@@ -77,6 +75,41 @@ const { title, meta_title, description, image, client_name, project_type } =
             <Content />
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pb-0">
+    <div class="container">
+      <!-- Related posts -->
+      <div class="row justify-between">
+        {/* section title   */}
+        <div class="lg:col-3 max-lg:text-center">
+          <p
+            data-aos="fade-up-sm"
+            data-aos-delay="150"
+            class="font-medium text-primary uppercase"
+            set:html={markdownify("BLOG")}
+          />
+          <h2
+            data-aos="fade-up-sm"
+            data-aos-delay="200"
+            class="my-3 font-medium text-primary"
+            set:html={markdownify("Related Contents")}
+          />
+          <div data-aos="fade-up-sm" data-aos-delay="300">
+            <Button enable label="View All" link="/projects" />
+          </div>
+        </div>
+        <div class="lg:col-8 max-lg:mt-14">
+          <div class="row">
+            {
+              similarPosts.map((post) => (
+                <BlogCard data={post} className="md:col-6" />
+              ))
+            }
+          </div>
+        </div>
       </div>
     </div>
   </section>

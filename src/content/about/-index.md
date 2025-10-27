@@ -21,21 +21,12 @@ blog_section:
 
 team_section:
   enable: true
-  title: "Our Expert Team"
-  subtitle: "THE BUILDERS"
+  title: "Meet the Builder"
+  subtitle: "THE FOUNDER"
   members:
-    - name: Sarah Mitchell
-      designation: Lead Builder
-      avatar: "/images/team/a.png"
-    - name: James Wilson
-      designation: Design Specialist
-      avatar: "/images/team/b.png"
-    - name: Emma Thompson
-      designation: Project Manager
-      avatar: "/images/team/c.png"
-    - name: David Chen
-      designation: Construction Supervisor
-      avatar: "/images/team/d.png"
+    - name: Mark Boonstra
+      designation: Owner
+      avatar: "/images/team/Mark.png"
 draft: false
 ---
 

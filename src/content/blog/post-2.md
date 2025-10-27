@@ -18,7 +18,7 @@ All our shacks are manufactured as flat packs and assembled on-site, making no l
 
 In addition to our ready-made options, we can also discuss our flat-pack range or create a custom build designed exactly to your preferences.
 
-**Customization Options:**
+**Customisation Options:**
 All our shacks offer a variety of choices including size, lining, insulation, cladding style, gable or skillion roof, and window and door sizes. You can choose to purchase a flat pack for self-assembly or have us complete the installation from start to finish. Costs will vary depending on your selected style, windows, doors, cladding, and other features. 
 
 We have licensed plumbers and electricians available to assist with lighting, power, and plumbing requirements. 

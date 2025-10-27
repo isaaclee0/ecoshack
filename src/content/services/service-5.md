@@ -3,7 +3,7 @@ title: "Shelters & Outdoor Structures"
 meta_title: "Custom Shelters & Outdoor Structures - Eco Shack"
 description: "Weather protection and outdoor living solutions including pergolas, gazebos, carports, and custom shelters."
 date: 2025-05-06T05:00:00Z
-image: "/images/services/service-5.png"
+image: "/images/gallery/15.jpg"
 categories: ["outdoor"]
 featured_in_homepage: false
 features:

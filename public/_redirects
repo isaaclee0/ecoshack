@@ -5,7 +5,8 @@ http://ecoshack-astro-website.isaac-c73.workers.dev/* https://ecoshack-astro-web
 http://ecoshack-astro.oneclickit.com.au/* https://ecoshack-astro.oneclickit.com.au/:splat 301
 
 # Ensure trailing slash consistency for main pages
-/blog /blog/ 301
+/blog /projects/ 301
+/blog/ /projects/ 301
 /projects /projects/ 301
 /about /about/ 301
 /contact /contact/ 301

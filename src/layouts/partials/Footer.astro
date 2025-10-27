@@ -62,73 +62,41 @@ const { footer_title, address, phone, email, footer_content } = config.params;
     </div>
 
     <div class="row section">
-      <div class="md:col-10">
-        <div class="row g-5 max-md:justify-center">
+      <div class="col-12">
+        <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
           <div
             data-aos="fade-up-sm"
             data-aos-delay="300"
-            class="col-10 md:col-6"
           >
-            <ImageMod
-              src={config.site.logo_footer}
-              width={215}
-              height={52}
-              alt="footer logo"
-              class="mb-3 max-md:mx-auto"
-              format="avif"
-              quality={90}
-              loading="lazy"
-            />
-            <p
-              class="text-text-light/50 text-balance max-md:text-center"
-              set:html={markdownify(footer_content)}
-            />
+            <a 
+              href={`tel:${phone}`}
+              class="text-text-light text-base hover:text-secondary text-lg! transition-colors"
+            >
+              {phone}
+            </a>
           </div>
 
           <div
             data-aos="fade-up-sm"
             data-aos-delay="350"
-            class="col-10 md:col-6 lg:col-3 max-md:text-center"
           >
-            <ul>
-              <li
-                class="mb-4 text-text-light text-base hover:text-secondary text-lg!"
-              >
-                <a href={`tel:${phone}`}>{phone}</a>
-              </li>
-              <li
-                class="mb-4 text-text-light text-base hover:text-secondary text-lg!"
-              >
-                <a href={`mailto:${email}`}>{email}</a>
-              </li>
-              <li
-                class="mb-4 text-text-light text-base hover:text-secondary text-lg!"
-              >
-                <a
-                  target="_blank"
-                  href={`https://www.google.com/maps?q=${encodeURIComponent(address)}`}
-                  set:html={markdownify(address)}
-                />
-              </li>
-            </ul>
+            <a 
+              href={`mailto:${email}`}
+              class="text-text-light text-base hover:text-secondary text-lg! transition-colors"
+            >
+              {email}
+            </a>
           </div>
 
           <div
             data-aos="fade-up-sm"
-            data-aos-delay="450"
-            class="col-10 md:col-6 lg:col-3 max-md:text-center"
+            data-aos-delay="400"
           >
-            <ul
-              class="flex flex-col gap-3 max-md:items-center max-md:[&>li]:ml-6"
-            >
-              {
-                social.main.map((item) => (
-                  <li>
-                    <ArrowBtn label={item.name} link={item.link} />
-                  </li>
-                ))
-              }
-            </ul>
+            {
+              social.main.map((item) => (
+                <ArrowBtn label={item.name} link={item.link} />
+              ))
+            }
           </div>
         </div>
       </div>

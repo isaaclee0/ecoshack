@@ -60,10 +60,6 @@ const { isNoSectionTop = false, isNoSectionBottom = false } = Astro.props;
                             class="text-white mt-10 mb-2 font-medium text-2xl"
                             set:text={markdownify(item.name)}
                           />
-                          <p
-                            class="text-white/50"
-                            set:text={markdownify(item.designation)}
-                          />
                         </div>
                       ))}
                     </div>

@@ -78,9 +78,7 @@ const reviewsCollection = defineCollection({
     testimonials: z.array(
       z.object({
         name: z.string(),
-        designation: z.string(),
         content: z.string(),
-        avatar: z.string().optional(),
         featured: z.boolean().optional(),
       }),
     ),
@@ -239,24 +237,6 @@ const faqsCollection = defineCollection({
   }),
 });
 
-const projectsCollection = defineCollection({
-  loader: glob({
-    pattern: "**/*.{md,mdx}",
-    base: "src/content/projects",
-  }),
-  schema: z.object({
-    title: z.string(),
-    meta_title: z.string(),
-    description: z.string(),
-    date: z.date().optional(),
-    image: z.string().optional(),
-    featured_in_homepage: z.boolean().optional(),
-    client_name: z.string().optional(),
-    project_type: z.string().optional(),
-    draft: z.boolean().optional(),
-  }),
-});
-
 // Call to Action collection schema
 const ctaSectionCollection = defineCollection({
   loader: glob({
@@ -290,7 +270,6 @@ export const collections = {
   about: aboutCollection,
   contact: contactCollection,
   services: servicesCollection,
-  projects: projectsCollection,
   gallery: galleryCollection,
   reviews: reviewsCollection,
   faqs: faqsCollection,
