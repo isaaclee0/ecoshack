@@ -4,7 +4,7 @@ import bgImageMod from "@/lib/utils/bgImageMod";
 import Button from "./Button.astro";
 
 const { banner } = Astro.props;
-const optimizedBannerImage = await bgImageMod(banner.image, "webp", 90);
+const optimizedBannerImage = await bgImageMod(banner.image, "avif", 75);
 ---
 
 <!-- bg-[url(/images/banner.png)] -->

@@ -45,13 +45,16 @@ const { enable, title, subtitle, description, images } = gallery;
           {images?.map((img, i) => (
             <div class="swiper-slide">
               <ImageMod
-                height={512}
-                width={392}
                 src={img}
+                height={256}
+                width={196}
                 alt={`gallery-slider-${i}`}
                 format="avif"
-                quality={85}
+                quality={80}
                 loading="lazy"
+                widths={[196, 392, 588]}
+                sizes="(max-width: 768px) 196px, (max-width: 1024px) 196px, 196px"
+                class="w-full h-auto object-cover"
               />
             </div>
           ))}

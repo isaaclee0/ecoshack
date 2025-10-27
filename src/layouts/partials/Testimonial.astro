@@ -1,6 +1,7 @@
 ---
 import { markdownify } from "@/lib/utils/textConverter";
 import DynamicIcon from "@/helpers/DynamicIcon";
+import bgImageMod from "@/lib/utils/bgImageMod";
 import { getEntry } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
@@ -15,6 +16,7 @@ type Props = {
 };
 
 const { isNoSectionTop = false, isNoSectionBottom = false } = Astro.props;
+const optimizedTestimonialBg = await bgImageMod("/images/banner-testimonial.jpg", "avif", 75);
 ---
 
 {
@@ -84,7 +86,7 @@ const { isNoSectionTop = false, isNoSectionBottom = false } = Astro.props;
               </div>
             </div>
           </div>
-          <div class="w-[90%] lg:w-[42%] bg-[url(/images/banner-testimonial.jpg)] lg:h-[913px] bg-cover aspect-square" />
+          <div class="w-[90%] lg:w-[42%] lg:h-[913px] bg-cover aspect-square" style={`background-image: url(${optimizedTestimonialBg})`} />
         </div>
       </div>
     </section>

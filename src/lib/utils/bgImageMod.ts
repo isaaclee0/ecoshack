@@ -30,11 +30,13 @@ const bgImageMod = async (
   // Get the image data for the specified source path
   const image = await getImagePath(src);
 
-  // Optimize the image for development
+  // Optimize the image with better compression settings
   const ImageMod = await getImage({
     src: image.default,
     format: format || "avif",
-    quality: quality || 80,
+    quality: quality || 75, // Reduced from 80 to 75 for better compression
+    width: 1920, // Limit max width for banner images
+    height: 1080, // Limit max height for banner images
   });
 
   return ImageMod.src;
