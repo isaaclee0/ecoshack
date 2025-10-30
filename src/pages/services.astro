@@ -51,9 +51,11 @@ const services = await getSinglePage(FOLDER);
                   alt={service.data.title}
                   width={600}
                   height={800}
-                  format="avif"
+                  format="webp"
                   quality={85}
                   loading="lazy"
+                  widths={[400, 600, 800, 1200]}
+                  sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 40vw"
                 />
               )}
             </div>

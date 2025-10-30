@@ -1,4 +1,6 @@
 ---
+import ImageMod from "@/components/ImageMod.astro";
+
 interface Props {
   images: string[];
   className?: string;
@@ -19,11 +21,17 @@ const {
   {
     images?.map((src: string, index: number) => (
       <figure class="group mb-4 break-inside-avoid overflow-hidden rounded-xl bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
-        <img
+        <ImageMod
           src={src}
           alt={`${alt} ${index + 1}`}
-          class="w-full h-auto block"
+          width={400}
+          height={0}
           loading="lazy"
+          format="webp"
+          quality={85}
+          widths={[300, 400, 600, 800]}
+          sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+          class="w-full h-auto block"
         />
       </figure>
     ))

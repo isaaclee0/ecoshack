@@ -63,9 +63,11 @@ const featuredHomeServices = (await getSinglePage("services")).filter(
                             alt={service.data.title}
                             width={600}
                             height={500}
-                            format="avif"
+                            format="webp"
                             quality={85}
                             loading="lazy"
+                            widths={[400, 600, 800, 1200]}
+                            sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 33vw"
                             class="h-full object-cover w-full"
                           />
                         </div>
@@ -78,9 +80,11 @@ const featuredHomeServices = (await getSinglePage("services")).filter(
                     alt={service.data.title}
                     width={600}
                     height={500}
-                    format="avif"
+                    format="webp"
                     quality={85}
                     loading="lazy"
+                    widths={[400, 600, 800, 1200]}
+                    sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 33vw"
                     class={`${
                       index % 3 === 1
                         ? "h-[500px] object-cover w-full"
@@ -107,8 +111,6 @@ const featuredHomeServices = (await getSinglePage("services")).filter(
 
 <script>
   import { Swiper } from "swiper";
-  import "swiper/css";
-  import "swiper/css/effect-fade";
   import { Autoplay, EffectFade } from "swiper/modules";
 
   document.addEventListener("astro:page-load", () => {

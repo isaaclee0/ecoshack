@@ -209,6 +209,10 @@ const { title, meta_title, description, image, noindex, canonical } =
     <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
     
+    <!-- Swiper CSS loaded asynchronously to prevent render blocking -->
+    <link rel="preload" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css"></noscript>
+    
     <script>
       // AOS init
       import AOS from "aos";
