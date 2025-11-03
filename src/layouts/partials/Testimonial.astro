@@ -53,14 +53,14 @@ const optimizedTestimonialBg = await bgImageMod("/images/banner-testimonial.jpg"
                         <div class="swiper-slide">
                           <div class="flex items-center">
                             <p
-                              set:text={markdownify(item.content)}
+                              set:html={markdownify(item.content)}
                               class="text-white md:text-h5 lg:text-h4 before:content-['“'] after:content-['”']"
                             />
                           </div>
 
                           <h6
                             class="text-white mt-10 mb-2 font-medium text-2xl"
-                            set:text={markdownify(item.name)}
+                            set:html={markdownify(item.name)}
                           />
                         </div>
                       ))}
@@ -104,7 +104,7 @@ const optimizedTestimonialBg = await bgImageMod("/images/banner-testimonial.jpg"
       loop: true,
       centeredSlides: true,
       autoplay: {
-        delay: 2500,
+        delay: 7000,
         disableOnInteraction: false,
       },
       allowTouchMove: false,

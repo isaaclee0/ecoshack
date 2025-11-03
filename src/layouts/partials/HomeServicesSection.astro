@@ -5,9 +5,8 @@ import { getSinglePage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 const { services } = Astro.props;
 
-const featuredHomeServices = (await getSinglePage("services")).filter(
-  (s) => s.data.featured_in_homepage,
-);
+// Show all published services on the homepage
+const allHomeServices = await getSinglePage("services");
 ---
 
 {
@@ -44,54 +43,25 @@ const featuredHomeServices = (await getSinglePage("services")).filter(
 
         {/* services cards  */}
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-24 pt-10 md:pt-40 px-4 sm:px-10 lg:px-0 overflow-hidden max-md:w-[90%] mx-auto">
-          {featuredHomeServices?.map((service, index) => (
-            <div
-              data-aos="fade-up-sm"
-              data-aos-delay={index * 100 + 300}
-              class="flex flex-col md:h-[550px] justify-end mb-24 last:mb-0"
-            >
+          {allHomeServices?.map((service, index) => (
+            <div class="flex flex-col md:h-[550px] justify-end mb-24 last:mb-0">
               <div class="flex justify-center items-end md:h-[400px]">
-                {service.data.gallery_images && service.data.gallery_images.length > 1 ? (
-                  <div class={`swiper service-slider-${index} w-full ${
-                    index % 3 === 1 ? "h-[500px]" : "h-[410px] self-end"
-                  }`}>
-                    <div class="swiper-wrapper">
-                      {service.data.gallery_images.map((image) => (
-                        <div class="swiper-slide">
-                          <ImageMod
-                            src={image}
-                            alt={service.data.title}
-                            width={600}
-                            height={500}
-                            format="webp"
-                            quality={85}
-                            loading="lazy"
-                            widths={[400, 600, 800, 1200]}
-                            sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 33vw"
-                            class="h-full object-cover w-full"
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ) : (
-                  <ImageMod
-                    src={service.data.image!}
-                    alt={service.data.title}
-                    width={600}
-                    height={500}
-                    format="webp"
-                    quality={85}
-                    loading="lazy"
-                    widths={[400, 600, 800, 1200]}
-                    sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 33vw"
-                    class={`${
-                      index % 3 === 1
-                        ? "h-[500px] object-cover w-full"
-                        : "h-[410px] object-cover w-full self-end"
-                    }`}
-                  />
-                )}
+                <ImageMod
+                  src={service.data.gallery_images && service.data.gallery_images.length > 0 ? service.data.gallery_images[0] : service.data.image!}
+                  alt={service.data.title}
+                  width={600}
+                  height={500}
+                  format="webp"
+                  quality={85}
+                  loading="eager"
+                  widths={[400, 600, 800, 1200]}
+                  sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 33vw"
+                  class={`${
+                    index % 3 === 1
+                      ? "h-[500px] object-cover w-full"
+                      : "h-[410px] object-cover w-full self-end"
+                  }`}
+                />
               </div>
 
               <div class="mt-10 text-center">
@@ -109,29 +79,6 @@ const featuredHomeServices = (await getSinglePage("services")).filter(
   )
 }
 
-<script>
-  import { Swiper } from "swiper";
-  import { Autoplay, EffectFade } from "swiper/modules";
+<!-- Swiper disabled for services section to avoid visibility issues -->
 
-  document.addEventListener("astro:page-load", () => {
-    // Initialize all service sliders
-    const serviceSliders = document.querySelectorAll('[class*="service-slider-"]');
-    
-    serviceSliders.forEach((slider) => {
-      new Swiper(slider as HTMLElement, {
-        modules: [Autoplay, EffectFade],
-        effect: "fade",
-        fadeEffect: {
-          crossFade: true,
-        },
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        allowTouchMove: false,
-        slidesPerView: 1,
-      });
-    });
-  });
-</script>
+<!-- No Swiper initialization; static images only to ensure stability -->

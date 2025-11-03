@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Eco Shack - Custom Outdoor Structures",
-    "base_url": "https://ecoshack.com.au",
+    "base_url": "https://ecoshacktasmania.com.au",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -17,10 +17,10 @@
   },
 
   "params": {
-    "contact_form_action": "#",
+    "contact_form_action": "/api/contact",
     "address": "",
     "phone": "0475 214 208",
-    "email": "info@ecoshack.com.au",
+    "email": "info@ecoshacktasmania.com.au",
     "footer_title": "Ready to Build Your Dream Structure?",
     "footer_content": "From spare rooms to studios, we create custom outdoor buildings that enhance your property and lifestyle."
   },

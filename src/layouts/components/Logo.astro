@@ -1,6 +1,5 @@
 ---
 import config from "@/config/config.json";
-import ImageMod from "./ImageMod.astro";
 
 const { src }: { src?: string } = Astro.props;
 const {
@@ -19,18 +18,13 @@ const {
 ---
 
 <a href="/" class="navbar-brand inline-block">
-  <ImageMod
-    src="/images/textonly.png"
-    class="inline-block"
-    width={200}
-    height={40}
+  <img
+    src="/images/logo.svg"
     alt="Eco Shack"
-    style={{
-      height: "40px",
-      width: "auto",
-    }}
-    format="webp"
-    quality={90}
+    width="200"
+    height="40"
     loading="eager"
+    class="inline-block"
+    style="height:40px;width:auto"
   />
 </a>

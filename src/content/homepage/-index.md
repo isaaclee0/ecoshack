@@ -48,7 +48,7 @@ fun_facts:
     - name: "Shacks Built"
       description: "Custom structures delivered to satisfied customers."
       counter:
-        count: "150"
+        count: "120"
         count_suffix: "+"
         count_prefix: ""
         count_duration: 3
@@ -56,15 +56,15 @@ fun_facts:
     - name: "Years Experience"
       description: "Trusted expertise in outdoor construction."
       counter:
-        count: "8"
+        count: "15"
         count_suffix: ""
         count_prefix: ""
         count_duration: 0.5
 
     - name: "Happy Customers"
-      description: "Families enjoying their new outdoor spaces."
+      description: "People enjoying their new shacks."
       counter:
-        count: "140"
+        count: "100"
         count_suffix: "+"
         count_prefix: ""
         count_duration: 3.5

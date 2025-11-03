@@ -9,9 +9,10 @@ import FAQs from "@/partials/FAQs.astro";
 import PageHeader from "@/partials/PageHeader.astro";
 import Testimonial from "@/partials/Testimonial.astro";
 import type { CollectionEntry } from "astro:content";
-import { getEntry } from "astro:content";
+import { getEntry, render } from "astro:content";
 
 const about = (await getEntry("about", "-index")) as CollectionEntry<"about">;
+const { Content } = await render(about);
 const posts = await getSinglePage("blog");
 
 const {
@@ -140,6 +141,19 @@ const {
                 class="object-contain object-top max-sm:w-full"
               />
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about markdown content -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <div class="content">
+            <Content />
           </div>
         </div>
       </div>

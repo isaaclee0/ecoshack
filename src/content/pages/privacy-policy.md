@@ -1,30 +1,74 @@
 ---
-title: "Privacy"
-meta_title: ""
-description: "this is meta description"
+title: "Privacy Policy"
+meta_title: "Privacy Policy"
+description: "Eco Shack Privacy Policy under the Australian Privacy Principles (APPs)."
 draft: false
 ---
+## Privacy Policy
 
-#### Responsibility of Contributors
+Eco Shack is committed to providing quality services to you, and this policy outlines our ongoing obligations to you in respect of how we manage your Personal Information.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+We have adopted the Australian Privacy Principles (APPs) contained in the Privacy Act 1988 (Cth) (the Privacy Act). The APPs govern the way in which we collect, use, disclose, store, secure and dispose of your Personal Information.
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+A copy of the Australian Privacy Principles may be obtained from the website of The Office of the Australian Information Commissioner at https://www.oaic.gov.au/.
 
-#### Gathering of Personal Information
+## What is Personal Information and why do we collect it?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+Personal Information is information or an opinion that identifies an individual. Examples of Personal Information we collect include names, addresses, email addresses, phone numbers and other contact details.
 
-#### Protection of Personal- Information
+This Personal Information is obtained in many ways including interviews, correspondence, by telephone, by email, via our website https://ecoshack.com.au, from media and publications, from other publicly available sources, and from cookies. We don’t guarantee website links or policy of authorised third parties.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+We collect your Personal Information for the primary purpose of providing our services to you, providing information to our clients, and marketing. We may also use your Personal Information for secondary purposes closely related to the primary purpose, in circumstances where you would reasonably expect such use or disclosure. You may unsubscribe from our mailing/marketing lists at any time by contacting us in writing at info@ecoshack.com.au.
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
+When we collect Personal Information we will, where appropriate and where possible, explain to you why we are collecting the information and how we plan to use it.
 
-#### Privacy Policy Changes
+## Sensitive Information
 
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organisation
-3. personal information including, but limited to, email addresses, telephone numbers
-4. Any Update come in The technology Customer will get automatic Notification.
+Sensitive information is defined in the Privacy Act to include information or opinion about such things as an individual's racial or ethnic origin, political opinions, membership of a political association, religious or philosophical beliefs, membership of a trade union or other professional body, criminal record or health information.
+
+Sensitive information will be used by us only:
+- For the primary purpose for which it was obtained
+- For a secondary purpose that is directly related to the primary purpose
+- With your consent; or where required or authorised by law.
+
+## Third Parties
+
+Where reasonable and practicable to do so, we will collect your Personal Information only from you. However, in some circumstances we may be provided with information by third parties. In such a case we will take reasonable steps to ensure that you are made aware of the information provided to us by the third party.
+
+## Disclosure of Personal Information
+
+Your Personal Information may be disclosed in a number of circumstances including the following:
+- Third parties where you consent to the use or disclosure; and
+- Where required or authorised by law.
+
+## Security of Personal Information
+
+Your Personal Information is stored in a manner that reasonably protects it from misuse and loss and from unauthorized access, modification or disclosure.
+
+When your Personal Information is no longer needed for the purpose for which it was obtained, we will take reasonable steps to destroy or permanently de-identify your Personal Information. However, most of the Personal Information is or will be stored in client files which will be kept by us for a minimum of 7 years.
+
+## Access to your Personal Information
+
+You may access the Personal Information we hold about you and update and/or correct it, subject to certain exceptions. If you wish to access your Personal Information, please contact us in writing.
+
+Eco Shack will not charge any fee for your access request, but may charge an administrative fee for providing a copy of your Personal Information.
+
+In order to protect your Personal Information we may require identification from you before releasing the requested information.
+
+## Maintaining the Quality of your Personal Information
+
+It is important to us that your Personal Information is up to date. We will take reasonable steps to make sure that your Personal Information is accurate, complete and up to date. If you find that the information we have is not up to date or is inaccurate, please advise us as soon as practicable so we can update our records and ensure we can continue to provide quality services to you.
+
+## Policy Updates
+
+This Policy may change from time to time and is available on our website.
+
+## Privacy Policy Complaints and Enquiries
+
+If you have any queries or complaints about our Privacy Policy please contact us at:
+
+- Business name: Eco Shack
+- Website: https://ecoshack.com.au
+- Email: info@ecoshack.com.au
+- Phone: 0475 214 208
+- Address: Australia

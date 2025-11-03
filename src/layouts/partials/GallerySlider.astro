@@ -5,15 +5,16 @@ import type { CollectionEntry } from "astro:content";
 
 type Props = {
   gallery: CollectionEntry<"homepage">["data"]["gallery"];
+  isNoSectionBottom?: boolean;
 };
 
-const { gallery } = Astro.props;
+const { gallery, isNoSectionBottom = false } = Astro.props;
 const { enable, title, subtitle, description, images } = gallery;
 ---
 
 {
   enable && (
-    <section class="section">
+    <section class={`section ${isNoSectionBottom && "pb-0"}`}>
       <div class="container">
         {/* section title   */}
         <div class="row g-5 justify-between items-center max-lg:text-center">

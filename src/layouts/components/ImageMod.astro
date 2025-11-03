@@ -1,15 +1,6 @@
 ---
 import type { ImageMetadata } from "astro";
-import { Image } from "astro:assets";
-
-// Ensure TypeScript recognizes Vite's `import.meta.glob` in this context
-declare global {
-  interface ImportMeta {
-    glob: (
-      pattern: string
-    ) => Record<string, () => Promise<{ default: ImageMetadata }>>;
-  }
-}
+import { Picture } from "astro:assets";
 
 // Props interface for the component
 interface Props {
@@ -52,6 +43,8 @@ const images = import.meta.glob(
 
 // Check if the source path is valid
 const isValidPath = images[src] ? true : false;
+const imageModule = isValidPath ? await images[src]() : undefined;
+const imageMeta: ImageMetadata | undefined = imageModule?.default;
 
 // Log a warning message in red if the image is not found
 !isValidPath &&
@@ -62,19 +55,19 @@ const isValidPath = images[src] ? true : false;
 
 {
   isValidPath && (
-    <Image
-      src={images[src]() as Promise<{ default: ImageMetadata }>}
+    <Picture
+      src={imageMeta!}
       alt={alt}
-      width={width}
-      height={height}
+      widths={widths}
+      sizes={sizes}
+      formats={["webp", "jpeg"]}
       loading={loading}
       decoding={decoding}
       class={className}
-      format={format}
       quality={quality}
       style={style}
-      widths={widths}
-      sizes={sizes}
+      width={width}
+      height={height}
     />
   )
 }

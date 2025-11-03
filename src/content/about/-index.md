@@ -10,15 +10,12 @@ images_gallery:
   - "/images/gallery/6.jpg"
   - "/images/gallery/7.jpg"
   - "/images/gallery/8.jpg"
-
 blog_section:
   enable: true
   title: "Our Services"
   subtitle: "WHAT WE BUILD"
   description: "We specialise in creating custom outdoor structures including spare rooms, bedrooms, sheds, studios, shelters, and everything in between. Each build is tailored to your specific needs and space."
   show_blog_count: 3
-  # All blog are in the `src\content\blog`
-
 team_section:
   enable: true
   title: "Meet the Builder"

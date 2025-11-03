@@ -14,6 +14,11 @@ testimonials:
     content: "Mark built us a stunning reclaimed timber and metal composting toilet and shower that exceeded every expectation. His craftsmanship, reliability and attention to detail are second to none - I'd hire him again in a heartbeat."
     featured: true
 
+  - name: "Justy Phillips"
+    content: "They built us a great studio 4m x 3m which squeezed in under the 18m2 planning regs in Kingborough. They are a dream to work with, hosted on site and everything was done on time, to price and just a lovely all-round experience. Couldn't recommend them highly enough."
+    featured: true
+
+
 #  - name: "Marvin McKinney"
 #    designation: "Happy Homeowner"
 #    avatar: "/images/reviews/1.png"

@@ -8,7 +8,7 @@ import CallToAction from "@/partials/CallToAction.astro";
 import FAQs from "@/partials/FAQs.astro";
 import PageHeader from "@/partials/PageHeader.astro";
 import type { CollectionEntry } from "astro:content";
-import { getEntry } from "astro:content";
+import { getEntry, render } from "astro:content";
 
 const FOLDER = "services";
 
@@ -17,6 +17,7 @@ const servicesIndex = (await getEntry(
   "-index"
 )) as CollectionEntry<"services">;
 const services = await getSinglePage(FOLDER);
+const { Content } = await render(servicesIndex);
 ---
 
 <Base
@@ -25,21 +26,50 @@ const services = await getSinglePage(FOLDER);
   image={servicesIndex.data.image}
   description={servicesIndex.data.description}
 >
-  <PageHeader title={servicesIndex?.data.title} />
-  <section class="section">
+  <PageHeader title={servicesIndex?.data.title} compact={true} />
+  <!-- Intro copy from services index -->
+  <section class="section-sm pb-8">
     <div class="container">
-      {
-        services?.map((service, i) => (
-          <div
-            class={`row g-5 mb-40 last:mb-0 items-center justify-between flex flex-col md:flex-row ${
-              i % 2 !== 0 ? "md:flex-row-reverse" : ""
-            }`}
-          >
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <div class="content">
+            <Content />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section pt-8">
+    <div class="container">
+      <!-- Shared features block shown once -->
+      <div class="row g-5 mb-40 items-start justify-between">
+        <div class="col-10 lg:col-8 mx-auto">
+          {servicesIndex.data.features?.map((feature, j) => (
             <div
-              data-aos={i % 2 === 0 ? "fade-right-sm" : "fade-left-sm"}
-              data-aos-delay="300"
-              class="col-10 lg:col-5 mx-auto"
+              data-aos="fade-up-sm"
+              data-aos-delay={j * 100 + 200}
+              class="mb-8 last:mb-0"
             >
+              <h3 class="h6 text-primary/75 pb-3">
+                <span class="mr-4 text-primary/25">
+                  {String(j + 1).padStart(2, "0")}
+                </span>
+                {feature.name}
+              </h3>
+
+              <p
+                class="text-balance"
+                set:html={markdownify(feature.description || "")}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="row g-5">
+        {services?.map((service, i) => (
+          <div class="col-12 lg:col-6" data-aos="fade-up-sm" data-aos-delay={i * 100 + 200}>
+            <div class="mx-auto">
               {service.data.gallery_images && service.data.gallery_images.length > 0 ? (
                 <ServiceGallery 
                   images={service.data.gallery_images} 
@@ -59,40 +89,53 @@ const services = await getSinglePage(FOLDER);
                 />
               )}
             </div>
-
-            <div class="col-10 lg:col-5 mx-auto">
-              <h2
-                data-aos="fade-up-sm"
-                data-aos-delay="150"
-                class="h4 pb-24"
-                set:html={markdownify(service.data.title)}
-              />
-
-              {service.data.features?.map((feature, j) => (
-                <div
-                  data-aos="fade-up-sm"
-                  data-aos-delay={j * 100 + 200}
-                  class="mb-8 last:mb-0"
-                >
-                  <h3 class="h6 text-primary/75 pb-3">
-                    <span class="mr-4 text-primary/25">
-                      {String(j + 1).padStart(2, "0")}
-                    </span>
-                    {feature.name}
-                  </h3>
-
-                  <p
-                    class="text-balance"
-                    set:html={markdownify(feature.description || "")}
-                  />
-                </div>
-              ))}
-            </div>
+            <h3 class="h5 pt-4" set:html={markdownify(service.data.title)} />
           </div>
-        ))
-      }
+        ))}
+      </div>
     </div>
   </section>
   <CallToAction isNoSectionTop={true} />
   <FAQs isNoSectionTop={true} />
+  <!-- Supplier logos and copy section -->
+  <section class="section pt-0">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10 text-center">
+          <p class="h5 text-primary">
+            We are the Tasmanian supplier for Green Loo and Eco Flo compost toilets. Please check out their websites below for products they carry. We have a wealth of information regarding installation and the types of composting systems to meet your needs. Contact Mark to find out more.
+          </p>
+
+          <div class="flex flex-wrap justify-center items-center gap-8 mt-8">
+            <a href="https://greenloo.org/" target="_blank" rel="noopener" aria-label="Green Loo website">
+              <ImageMod
+                src="/images/services/greenloo.png"
+                alt="Green Loo"
+                width={200}
+                height={100}
+                format="webp"
+                quality={85}
+                loading="lazy"
+                widths={[160, 200, 240, 320]}
+                class="h-[80px] w-auto object-contain"
+              />
+            </a>
+            <a href="https://ecoflo.com.au/" target="_blank" rel="noopener" aria-label="Ecoflo website">
+              <ImageMod
+                src="/images/services/ecoflo.png"
+                alt="Ecoflo"
+                width={200}
+                height={100}
+                format="webp"
+                quality={85}
+                loading="lazy"
+                widths={[160, 200, 240, 320]}
+                class="h-[80px] w-auto object-contain"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </Base>
