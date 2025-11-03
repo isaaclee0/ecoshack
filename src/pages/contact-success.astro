@@ -1,0 +1,32 @@
+---
+import Button from "@/components/Button.astro";
+import Base from "@/layouts/Base.astro";
+import bgImageMod from "@/lib/utils/bgImageMod";
+
+const optimizedBannerImage = await bgImageMod("/images/banner.jpg", "webp", 90);
+---
+
+<Base title="Message Sent">
+  <section class="relative pt-[220px] pb-[120px] text-center overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center grayscale-[100%] z-0"
+      style={`background-image: url(${optimizedBannerImage})`}
+      aria-hidden="true"
+    >
+    </div>
+
+    <div class="relative z-10 container">
+      <div class="row justify-center">
+        <div class="sm:col-10 md:col-8 lg:col-6">
+          <h1 class="text-white mb-4">Thank you!</h1>
+          <p class="text-white/90">
+            Your message has been sent successfully. We’ll get back to you shortly.
+          </p>
+          <div class="mt-10">
+            <Button enable label="Back to Home" link="/" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

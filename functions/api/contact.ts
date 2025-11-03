@@ -116,6 +116,17 @@ export const onRequestPost = async ({ request, env }: PagesContext) => {
     );
   }
 
+  // If the request came from a standard browser form submit, redirect to success page
+  const accept = (request.headers.get("accept") || "").toLowerCase();
+  const wantsHtml = accept.includes("text/html") || accept.includes("application/xhtml+xml");
+  if (wantsHtml) {
+    return new Response(null, {
+      status: 303,
+      headers: { Location: "/contact-success" },
+    });
+  }
+
+  // Default JSON response for programmatic clients
   return new Response(JSON.stringify({ ok: true }), {
     status: 200,
     headers: { "content-type": "application/json" },
