@@ -132,3 +132,14 @@ export const onRequestPost = async ({ request, env }: PagesContext) => {
     headers: { "content-type": "application/json" },
   });
 };
+
+// Optional health check for GET requests so HEAD/GET to /api/contact is informative
+export const onRequestGet = async () => {
+  return new Response(
+    JSON.stringify({
+      ok: true,
+      message: "Contact endpoint is alive. Use POST to submit.",
+    }),
+    { status: 200, headers: { "content-type": "application/json" } },
+  );
+};
