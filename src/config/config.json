@@ -17,10 +17,10 @@
   },
 
   "params": {
-    "contact_form_action": "/api/contact",
+    "contact_form_action": "https://usebasin.com/f/d224eba3fbb8",
     "address": "",
     "phone": "0475 214 208",
-    "email": "isaac.lee@oneclickit.com.au",
+    "email": "info@ecoshacktasmania.com.au",
     "footer_title": "Ready to Build Your Dream Structure?",
     "footer_content": "From spare rooms to studios, we create custom outdoor buildings that enhance your property and lifestyle."
   },

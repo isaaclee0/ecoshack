@@ -1,8 +1,6 @@
 # Astro will naturally handle routing, but we can add specific redirects if needed
 
-# Force HTTPS for working domains
-http://ecoshack-astro-website.isaac-c73.workers.dev/* https://ecoshack-astro-website.isaac-c73.workers.dev/:splat 301
-http://ecoshack-astro.oneclickit.com.au/* https://ecoshack-astro.oneclickit.com.au/:splat 301
+# (Removed legacy Workers and staging domain HTTPS redirects)
 
 # Ensure trailing slash consistency for main pages
 /blog /projects/ 301

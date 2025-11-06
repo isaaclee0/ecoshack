@@ -39,6 +39,12 @@ const { title, description, meta_title, image, address_section } = contact.data;
             method="POST"
             enctype="application/x-www-form-urlencoded"
           >
+            <!-- Honeypot field: visually hidden, present in DOM for basic bots -->
+            <div style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
+              <label for="website">Website</label>
+              <input id="website" name="website" type="text" autocomplete="off" tabindex="-1" aria-hidden="true" />
+            </div>
+            <input type="hidden" name="redirect" value={`${config.site.base_url}/contact-success`} />
             <h2 class="text-white mb-4" set:html={markdownify(title)} />
             {
               description && (
@@ -103,6 +109,28 @@ const { title, description, meta_title, image, address_section } = contact.data;
               style="btn-outline"
             />
           </form>
+          <script>
+            document.addEventListener('astro:page-load', () => {
+              const formEl = document.querySelector('form[action^="https://usebasin.com/"]');
+              if (!(formEl instanceof HTMLFormElement)) return;
+              formEl.addEventListener('submit', (e) => {
+                const hpEl = formEl.querySelector('input[name="website"]');
+                if (hpEl instanceof HTMLInputElement) {
+                  if (hpEl.value.trim().length > 0) {
+                    // Bot detected; silently drop submission
+                    e.preventDefault();
+                    return;
+                  }
+                }
+                const btnEl = formEl.querySelector('button[type="submit"]');
+                if (btnEl instanceof HTMLButtonElement) {
+                  btnEl.disabled = true;
+                  btnEl.setAttribute('aria-busy', 'true');
+                  btnEl.classList.add('opacity-60', 'pointer-events-none');
+                }
+              });
+            });
+          </script>
         </div>
 
         <div class="lg:w-[40%] self-center lg:self-end pb-14">
@@ -144,53 +172,5 @@ const { title, description, meta_title, image, address_section } = contact.data;
       </div>
     </div>
   </section>
-  <script is:inline>
-    document.addEventListener("astro:page-load", () => {
-      const form = document.querySelector("form[action='/api/contact']");
-      if (!form) return;
-
-      form.addEventListener("submit", async (e) => {
-        // Ensure a POST submission even if SPA/transition scripts are active
-        e.preventDefault();
-        if (!(form instanceof HTMLFormElement)) return;
-        const fd = new FormData(form);
-        const params = new URLSearchParams();
-        for (const [key, value] of fd.entries()) {
-          params.append(key, String(value));
-        }
-
-        try {
-          const res = await fetch("/api/contact", {
-            method: "POST",
-            headers: {
-              "content-type": "application/x-www-form-urlencoded",
-              // Hint server that this is a browser submission
-              accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            },
-            body: params.toString(),
-          });
-
-          // If server returns a redirect, honor it
-          if (res.redirected) {
-            window.location.href = res.url;
-            return;
-          }
-
-          // Otherwise, inspect JSON and redirect on success
-          const data = await res.json().catch(() => ({}));
-          if (data && data.ok) {
-            window.location.href = "/contact-success";
-          } else {
-            alert(
-              (data && data.error) ||
-                "There was a problem sending your message. Please try again.",
-            );
-          }
-        } catch (err) {
-          alert("Network error — please try again.");
-        }
-      });
-    });
-  </script>
   <CallToAction isNoSectionTop={true} isNoSectionBottom={true} />
 </Base>
