@@ -37,6 +37,7 @@ const { title, description, meta_title, image, address_section } = contact.data;
             class="bg-primary px-12 py-14"
             action={contact_form_action}
             method="POST"
+            enctype="application/x-www-form-urlencoded"
           >
             <h2 class="text-white mb-4" set:html={markdownify(title)} />
             {
@@ -143,5 +144,53 @@ const { title, description, meta_title, image, address_section } = contact.data;
       </div>
     </div>
   </section>
+  <script is:inline>
+    document.addEventListener("astro:page-load", () => {
+      const form = document.querySelector("form[action='/api/contact']");
+      if (!form) return;
+
+      form.addEventListener("submit", async (e) => {
+        // Ensure a POST submission even if SPA/transition scripts are active
+        e.preventDefault();
+        if (!(form instanceof HTMLFormElement)) return;
+        const fd = new FormData(form);
+        const params = new URLSearchParams();
+        for (const [key, value] of fd.entries()) {
+          params.append(key, String(value));
+        }
+
+        try {
+          const res = await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+              "content-type": "application/x-www-form-urlencoded",
+              // Hint server that this is a browser submission
+              accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            },
+            body: params.toString(),
+          });
+
+          // If server returns a redirect, honor it
+          if (res.redirected) {
+            window.location.href = res.url;
+            return;
+          }
+
+          // Otherwise, inspect JSON and redirect on success
+          const data = await res.json().catch(() => ({}));
+          if (data && data.ok) {
+            window.location.href = "/contact-success";
+          } else {
+            alert(
+              (data && data.error) ||
+                "There was a problem sending your message. Please try again.",
+            );
+          }
+        } catch (err) {
+          alert("Network error — please try again.");
+        }
+      });
+    });
+  </script>
   <CallToAction isNoSectionTop={true} isNoSectionBottom={true} />
 </Base>

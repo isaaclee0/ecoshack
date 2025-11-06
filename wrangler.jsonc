@@ -2,6 +2,7 @@
   "name": "ecoshack-astro-website",
   "compatibility_date": "2025-09-25",
   "preview_urls": false,
+  "pages_build_output_dir": "dist",
   "assets": {
     "directory": "./dist"
   }
