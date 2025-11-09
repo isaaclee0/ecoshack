@@ -28,13 +28,17 @@ let {
   decoding,
   class: className,
   format = "webp",
-  quality = 80,
+  quality = 75,
   style,
   widths,
   sizes,
 } = Astro.props;
 
 src = `/public${src}`;
+
+// Provide responsive defaults if not explicitly set
+widths = widths ?? [400, 600, 800];
+sizes = sizes ?? "(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 33vw";
 
 // Glob pattern to load images from the /public/images folder
 const images = import.meta.glob(

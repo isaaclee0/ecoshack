@@ -6,6 +6,9 @@ import Button from "./Button.astro";
 const { banner } = Astro.props;
 const optimizedBannerImage = await bgImageMod(banner.image, "avif", 75);
 ---
+<Fragment slot="head">
+  <link rel="preload" as="image" href={optimizedBannerImage} imagesrcset={optimizedBannerImage} fetchpriority="high" />
+</Fragment>
 
 <!-- bg-[url(/images/banner.png)] -->
 <section

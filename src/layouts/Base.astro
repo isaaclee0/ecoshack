@@ -184,6 +184,10 @@ const { title, meta_title, description, image, noindex, canonical } =
     />
 
 
+    <!-- Allow pages/components to inject head content like preloads -->
+    <slot name="head" />
+
+
   </head>
   <body class="overflow-x-hidden">
     {/* google tag manager noscript */}
@@ -311,6 +315,54 @@ const { title, meta_title, description, image, noindex, canonical } =
         aosInit();
         handleCustomDomainNavigation();
       });
+    </script>
+
+    <!-- Inline Cloudflare email decode replacement to avoid external render-blocking script -->
+    <script>
+      (function () {
+        /**
+         * Decode Cloudflare obfuscated email value.
+         * @param {string} encoded
+         * @returns {string|null}
+         */
+        function decodeCfEmail(encoded) {
+          try {
+            var r = parseInt(encoded.substr(0, 2), 16), n = "", i;
+            for (i = 2; i < encoded.length; i += 2) {
+              var c = parseInt(encoded.substr(i, 2), 16) ^ r;
+              n += String.fromCharCode(c);
+            }
+            return n;
+          } catch (e) { return null; }
+        }
+
+        /**
+         * Find elements with data-cfemail and replace with decoded value.
+         * @returns {void}
+         */
+        function applyEmailDecode() {
+          /** @type {NodeListOf<HTMLElement>} */
+          var nodes = document.querySelectorAll('[data-cfemail]');
+          nodes.forEach(function (el) {
+            var encoded = el.getAttribute('data-cfemail');
+            if (!encoded) return;
+            var email = decodeCfEmail(encoded);
+            if (!email) return;
+            el.removeAttribute('data-cfemail');
+            el.textContent = email;
+            var parent = el.parentElement;
+            if (parent && parent.tagName === 'A') {
+              parent.setAttribute('href', 'mailto:' + email);
+            }
+          });
+        }
+
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+          applyEmailDecode();
+        } else {
+          document.addEventListener('DOMContentLoaded', applyEmailDecode);
+        }
+      })();
     </script>
   </body>
 </html>

@@ -16,6 +16,8 @@ export default defineConfig({
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   devToolbar: { enabled: false },
+  // Inline CSS to avoid render-blocking stylesheets
+  inlineStylesheets: 'always',
   image: { 
     service: sharp(),
     domains: ["localhost"],
