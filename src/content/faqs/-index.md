@@ -21,6 +21,6 @@ list:
     answer: "Yes, sustainability is at the core of our business. We use eco-friendly materials, sustainable building practices, and design our structures to have minimal environmental impact while maximizing energy efficiency."
   - question: "Do you offer installation services?"
     answer: "Yes, we provide professional installation for all our structures. Our experienced team will ensure your EcoShack is properly constructed and ready for immediate use."
-  - question: "Can EcoShack structures be customized?"
+  - question: "Can EcoShack structures be customised?"
     answer: "Absolutely! We offer extensive customisation options including size, layout, materials, finishes, and features. We work closely with clients to create structures that perfectly match their needs and aesthetic preferences."
 ---
