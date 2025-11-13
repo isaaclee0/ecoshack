@@ -4,6 +4,8 @@ const bgImageMod = async (
   src: string,
   format?: "auto" | "avif" | "jpeg" | "png" | "svg" | "webp",
   quality?: number,
+  width?: number,
+  height?: number,
 ) => {
   src = `/public${src}`;
   const images = import.meta.glob("/public/images/**/*.{jpeg,jpg,png,gif}");
@@ -35,8 +37,8 @@ const bgImageMod = async (
     src: image.default,
     format: format || "avif",
     quality: quality || 75, // Reduced from 80 to 75 for better compression
-    width: 1920, // Limit max width for banner images
-    height: 1080, // Limit max height for banner images
+    width: width || 1920, // Allow custom width for banner images
+    height: height || 1080, // Allow custom height for banner images
   });
 
   return ImageMod.src;

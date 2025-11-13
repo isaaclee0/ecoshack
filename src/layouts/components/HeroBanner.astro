@@ -4,16 +4,19 @@ import bgImageMod from "@/lib/utils/bgImageMod";
 import Button from "./Button.astro";
 
 const { banner } = Astro.props;
-const optimizedBannerImage = await bgImageMod(banner.image, "avif", 75);
+const optimizedBannerImageMobile = await bgImageMod(banner.image, "webp", 70, 768, 432);
+const optimizedBannerImageDesktop = await bgImageMod(banner.image, "avif", 75, 1920, 1080);
 ---
 <Fragment slot="head">
-  <link rel="preload" as="image" href={optimizedBannerImage} imagesrcset={optimizedBannerImage} fetchpriority="high" />
+  <!-- Preload desktop banner only for large screens to avoid mobile bandwidth hit -->
+  <link rel="preload" as="image" href={optimizedBannerImageDesktop} media="(min-width: 1024px)" fetchpriority="low" />
 </Fragment>
 
 <!-- bg-[url(/images/banner.png)] -->
 <section
-  class="section relative bg-cover bg-center md:h-[calc(65svh)] lg:h-[calc(100svh_-_28px)]"
-  style={`background-image: url(${optimizedBannerImage})`}
+  class="section relative bg-cover bg-center md:h-[calc(65svh)] lg:h-[calc(100svh_-_28px)] hero-banner"
+  style={`background-image: url(${optimizedBannerImageMobile})`}
+  data-desktop-bg={optimizedBannerImageDesktop}
 >
   <!-- Black overlay for better text readability -->
   <div class="absolute inset-0 bg-black/25 z-10"></div>
@@ -108,3 +111,27 @@ const optimizedBannerImage = await bgImageMod(banner.image, "avif", 75);
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const el = document.querySelector('.hero-banner');
+    if (!(el instanceof HTMLElement)) return;
+    const desktopUrl = el.dataset.desktopBg;
+    if (!desktopUrl) return;
+
+    const mql = window.matchMedia('(min-width: 1024px)');
+    const apply = () => {
+      if (mql.matches) {
+        el.style.backgroundImage = `url(${desktopUrl})`;
+      }
+    };
+
+    apply();
+    if (mql.addEventListener) {
+      mql.addEventListener('change', apply);
+    } else if (mql.addListener) {
+      // Fallback for older browsers
+      mql.addListener(apply);
+    }
+  });
+</script>
