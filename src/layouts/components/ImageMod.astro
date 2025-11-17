@@ -42,7 +42,7 @@ sizes = sizes ?? "(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 33vw";
 
 // Glob pattern to load images from the /public/images folder
 const images = import.meta.glob(
-  "/public/images/**/*.{jpeg,jpg,png,gif,svg}"
+  "/public/images/**/*.{jpeg,jpg,png,gif,svg,webp}"
 ) as Record<string, () => Promise<{ default: ImageMetadata }>>;
 
 // Check if the source path is valid

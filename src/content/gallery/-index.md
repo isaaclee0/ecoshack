@@ -2,49 +2,81 @@
 title: "Gallery"
 meta_title: "EcoShack Gallery - Our Shack Building Projects"
 description: "Explore our portfolio of custom shacks, studios, spare rooms, and outdoor structures built with quality craftsmanship."
-image: "/images/gallery/7.jpg"
+image: "/images/gallery/0007.jpg"
 
 gallery_images:
-  - design: Custom Garden Studio
-    image: "/images/gallery/1.jpg"
-  - design: Modern Shed Design
-    image: "/images/gallery/2.jpg"
-  - design: Backyard Office Space
-    image: "/images/gallery/3.jpg"
-  - design: Rustic Storage Shed
-    image: "/images/gallery/4.jpg"
-  - design: Contemporary Studio
-    image: "/images/gallery/5.jpg"
-  - design: Outdoor Workshop
-    image: "/images/gallery/6.jpg"
-  - design: Guest Bedroom Shack
-    image: "/images/gallery/7.jpg"
-  - design: Art Studio Retreat
-    image: "/images/gallery/8.jpg"
-  - design: Multi-Purpose Shelter
-    image: "/images/gallery/9.jpg"
-  - design: Eco-Friendly Cabin
-    image: "/images/gallery/10.jpg"
-  - design: Custom Outdoor Room
-    image: "/images/gallery/11.jpg"
-  - design: Sustainable Living Space
-    image: "/images/gallery/12.jpg"
-  - design: Compact Home Office
-    image: "/images/gallery/13.jpg"
-  - design: Creative Workshop
-    image: "/images/gallery/14.jpg"
-  - design: Garden Retreat
-    image: "/images/gallery/15.jpg"
-  - design: Modern Outdoor Studio
-    image: "/images/gallery/16.jpg"
-  - design: Rustic Cabin Design
-    image: "/images/gallery/17.jpg"
-  - design: Contemporary Shed
-    image: "/images/gallery/18.jpg"
-  - design: Eco-Friendly Bathroom
-    image: "/images/gallery/19.jpg"
-  - design: Custom Furniture Design
-    image: "/images/gallery/20.jpg"
-  - design: Outdoor Living Space
-    image: "/images/gallery/21.jpg"
+  - { image: "/images/gallery/0001.jpg" }
+  - { image: "/images/gallery/0002.jpg" }
+  - { image: "/images/gallery/0003.jpg" }
+  - { image: "/images/gallery/0004.jpg" }
+  - { image: "/images/gallery/0005.jpg" }
+  - { image: "/images/gallery/0006.jpg" }
+  - { image: "/images/gallery/0007.jpg" }
+  - { image: "/images/gallery/0008.jpg" }
+  - { image: "/images/gallery/0009.jpg" }
+  - { image: "/images/gallery/0010.jpg" }
+  - { image: "/images/gallery/0011.jpg" }
+  - { image: "/images/gallery/0012.jpg" }
+  - { image: "/images/gallery/0013.jpg" }
+  - { image: "/images/gallery/0014.jpg" }
+  - { image: "/images/gallery/0015.jpg" }
+  - { image: "/images/gallery/0016.jpg" }
+  - { image: "/images/gallery/0017.jpg" }
+  - { image: "/images/gallery/0018.jpg" }
+  - { image: "/images/gallery/0019.jpg" }
+  - { image: "/images/gallery/0020.jpg" }
+  - { image: "/images/gallery/0021.jpg" }
+  - { image: "/images/gallery/0022.jpg" }
+  - { image: "/images/gallery/0023.jpg" }
+  - { image: "/images/gallery/0024.jpg" }
+  - { image: "/images/gallery/0025.jpg" }
+  - { image: "/images/gallery/0026.jpg" }
+  - { image: "/images/gallery/0027.jpg" }
+  - { image: "/images/gallery/0028.jpg" }
+  - { image: "/images/gallery/0029.jpg" }
+  - { image: "/images/gallery/0030.jpg" }
+  - { image: "/images/gallery/0031.jpg" }
+  - { image: "/images/gallery/0032.jpg" }
+  - { image: "/images/gallery/0033.jpg" }
+  - { image: "/images/gallery/0034.jpg" }
+  - { image: "/images/gallery/0035.jpg" }
+  - { image: "/images/gallery/0036.jpg" }
+  - { image: "/images/gallery/0037.jpg" }
+  - { image: "/images/gallery/0038.jpg" }
+  - { image: "/images/gallery/0039.jpg" }
+  - { image: "/images/gallery/0040.jpg" }
+  - { image: "/images/gallery/0041.jpg" }
+  - { image: "/images/gallery/0042.jpg" }
+  - { image: "/images/gallery/0043.jpg" }
+  - { image: "/images/gallery/0044.jpg" }
+  - { image: "/images/gallery/0045.jpg" }
+  - { image: "/images/gallery/0046.jpg" }
+  - { image: "/images/gallery/0047.jpg" }
+  - { image: "/images/gallery/0048.jpg" }
+  - { image: "/images/gallery/0049.jpg" }
+  - { image: "/images/gallery/0050.jpg" }
+  - { image: "/images/gallery/0051.jpg" }
+  - { image: "/images/gallery/0052.jpg" }
+  - { image: "/images/gallery/0053.jpg" }
+  - { image: "/images/gallery/0054.jpg" }
+  - { image: "/images/gallery/0055.jpg" }
+  - { image: "/images/gallery/0056.jpg" }
+  - { image: "/images/gallery/0057.jpg" }
+  - { image: "/images/gallery/0058.jpg" }
+  - { image: "/images/gallery/0059.jpg" }
+  - { image: "/images/gallery/0060.jpg" }
+  - { image: "/images/gallery/0061.jpg" }
+  - { image: "/images/gallery/0062.jpg" }
+  - { image: "/images/gallery/0063.jpg" }
+  - { image: "/images/gallery/0064.jpg" }
+  - { image: "/images/gallery/0065.jpg" }
+  - { image: "/images/gallery/0066.jpg" }
+  - { image: "/images/gallery/0067.jpg" }
+  - { image: "/images/gallery/0068.jpg" }
+  - { image: "/images/gallery/0069.jpg" }
+  - { image: "/images/gallery/0070.jpg" }
+  - { image: "/images/gallery/0071.jpg" }
+  - { image: "/images/gallery/0072.jpg" }
+  - { image: "/images/gallery/0073.jpg" }
+  - { image: "/images/gallery/0074.jpg" }
 ---

@@ -2,14 +2,14 @@
 title: "About Eco Shack"
 meta_title: "About Eco Shack - Custom Outdoor Structures"
 description: "Since 2008, Eco Shack has been Tasmania's leader in custom outdoor structures. We build spare rooms, studios, sheds, and shelters using locally sourced timber and innovative flat-pack construction."
-image: "/images/gallery/3.jpg"
+image: "/images/gallery/0003.jpg"
 images_gallery:
-  - "/images/gallery/3.jpg"
-  - "/images/gallery/4.jpg"
-  - "/images/gallery/5.jpg"
-  - "/images/gallery/6.jpg"
-  - "/images/gallery/7.jpg"
-  - "/images/gallery/8.jpg"
+  - "/images/gallery/0003.jpg"
+  - "/images/gallery/0004.jpg"
+  - "/images/gallery/0005.jpg"
+  - "/images/gallery/0006.jpg"
+  - "/images/gallery/0007.jpg"
+  - "/images/gallery/0008.jpg"
 blog_section:
   enable: true
   title: "Our Services"

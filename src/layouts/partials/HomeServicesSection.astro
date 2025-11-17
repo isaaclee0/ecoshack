@@ -41,11 +41,10 @@ const allHomeServices = await getSinglePage("services");
           )}
         </div>
 
-        {/* services cards  */}
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-24 pt-10 md:pt-40 px-4 sm:px-10 lg:px-0 overflow-hidden max-md:w-[90%] mx-auto">
-          {allHomeServices?.map((service, index) => (
-            <div class="flex flex-col md:h-[550px] justify-end mb-24 last:mb-0">
-              <div class="flex justify-center items-end md:h-[400px]">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-16 pt-10 md:pt-40 px-4 sm:px-10 lg:px-0 overflow-hidden max-md:w-[90%] mx-auto">
+          {allHomeServices?.map((service) => (
+            <div class="flex flex-col justify-end">
+              <div class="service-card-image flex justify-center items-end overflow-hidden rounded-lg h-[360px] md:h-[420px]">
                 <ImageMod
                   src={service.data.gallery_images && service.data.gallery_images.length > 0 ? service.data.gallery_images[0] : service.data.image!}
                   alt={service.data.title}
@@ -56,15 +55,11 @@ const allHomeServices = await getSinglePage("services");
                   loading="eager"
                   widths={[400, 600, 800, 1200]}
                   sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 33vw"
-                  class={`${
-                    index % 3 === 1
-                      ? "h-[500px] object-cover w-full"
-                      : "h-[410px] object-cover w-full self-end"
-                  }`}
+                  class="h-full w-full object-cover"
                 />
               </div>
 
-              <div class="mt-10 text-center">
+              <div class="mt-8 text-center service-card-text">
                 <h3
                   class="h5 font-medium mb-2"
                   set:html={markdownify(service.data.title)}
@@ -78,6 +73,28 @@ const allHomeServices = await getSinglePage("services");
     </section>
   )
 }
+
+<style>
+  :global(.service-card-image picture),
+  :global(.service-card-image img) {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  :global(.service-card-image img) {
+    object-fit: cover;
+  }
+  :global(.service-card-text a) {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 600;
+  }
+  :global(.service-card-text a:hover) {
+    color: color-mix(in srgb, var(--color-primary), black 20%);
+  }
+</style>
 
 <!-- Swiper disabled for services section to avoid visibility issues -->
 

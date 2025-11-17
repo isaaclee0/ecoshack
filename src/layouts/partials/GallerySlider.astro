@@ -16,21 +16,9 @@ const { enable, title, subtitle, description, images } = gallery;
   enable && (
     <section class={`section ${isNoSectionBottom && "pb-0"}`}>
       <div class="container">
-        {/* section title   */}
         <div class="row g-5 justify-between items-center max-lg:text-center">
-          <div class="lg:col-4">
-            <p
-              data-aos="fade-up-sm"
-              data-aos-delay="150"
-              class="font-medium text-primary uppercase"
-              set:html={markdownify(subtitle)}
-            />
-            <h2
-              data-aos="fade-up-sm"
-              data-aos-delay="200"
-              class="mt-3 font-medium text-primary"
-              set:html={markdownify(title)}
-            />
+          <div class="lg:col-4 flex items-center justify-center py-6">
+            <div class="company-logo" aria-label="Eco Shack logo" />
           </div>
           <p
             data-aos="fade-up-sm"
@@ -68,6 +56,20 @@ const { enable, title, subtitle, description, images } = gallery;
 <style>
   .swiper-wrapper {
     transition-timing-function: linear !important;
+  }
+  .company-logo {
+    width: 560px;
+    height: 240px;
+    max-width: 100%;
+    background-color: #609fa1;
+    -webkit-mask-image: url('/images/logo.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    mask-image: url('/images/logo.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
   }
 </style>
 

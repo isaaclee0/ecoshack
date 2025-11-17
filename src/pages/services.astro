@@ -68,8 +68,8 @@ const { Content } = await render(servicesIndex);
 
       <div class="row g-5">
         {services?.map((service, i) => (
-          <div class="col-12 lg:col-6" data-aos="fade-up-sm" data-aos-delay={i * 100 + 200}>
-            <div class="mx-auto">
+          <div class="col-12 lg:col-6 mb-10" data-aos="fade-up-sm" data-aos-delay={i * 100 + 200}>
+            <div class="mx-auto overflow-hidden">
               {service.data.gallery_images && service.data.gallery_images.length > 0 ? (
                 <ServiceGallery 
                   images={service.data.gallery_images} 
@@ -79,13 +79,14 @@ const { Content } = await render(servicesIndex);
                 <ImageMod
                   src={service.data.image!}
                   alt={service.data.title}
-                  width={600}
-                  height={800}
+                  width={0}
+                  height={0}
                   format="webp"
                   quality={85}
                   loading="lazy"
                   widths={[400, 600, 800, 1200]}
                   sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 40vw"
+                  class="w-full h-auto object-cover rounded-lg"
                 />
               )}
             </div>
