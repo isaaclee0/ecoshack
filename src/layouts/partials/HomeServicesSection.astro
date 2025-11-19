@@ -44,7 +44,13 @@ const allHomeServices = await getSinglePage("services");
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-16 pt-10 md:pt-40 px-4 sm:px-10 lg:px-0 overflow-hidden max-md:w-[90%] mx-auto">
           {allHomeServices?.map((service) => (
             <div class="flex flex-col justify-end">
-              <div class="service-card-image flex justify-center items-end overflow-hidden rounded-lg h-[360px] md:h-[420px]">
+              <div class={`service-card-image flex justify-center items-end overflow-hidden rounded-lg h-[360px] md:h-[420px] ${
+                ((service.data.gallery_images && service.data.gallery_images.length > 0
+                  ? service.data.gallery_images[0]
+                  : service.data.image!) || "")?.includes("compost1.png")
+                  ? "contain-mobile"
+                  : ""
+              }`}>
                 <ImageMod
                   src={service.data.gallery_images && service.data.gallery_images.length > 0 ? service.data.gallery_images[0] : service.data.image!}
                   alt={service.data.title}
@@ -84,6 +90,18 @@ const allHomeServices = await getSinglePage("services");
 
   :global(.service-card-image img) {
     object-fit: cover;
+  }
+  @media (max-width: 767px) {
+    :global(.service-card-image.contain-mobile img) {
+      object-fit: contain;
+      object-position: top center;
+    }
+  }
+  @media (min-width: 768px) {
+    :global(.service-card-image.contain-mobile img) {
+      object-fit: cover;
+      object-position: center;
+    }
   }
   :global(.service-card-text a) {
     color: var(--color-primary);
