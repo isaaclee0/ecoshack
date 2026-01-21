@@ -147,7 +147,7 @@ const { title, description, meta_title, image, address_section } = contact.data;
             set:html={markdownify(address_section.description)}
           />
 
-          <ul class="grid grid-cols-2 gap-8 mt-12">
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8 mt-12">
             <li data-aos="fade-up-sm" data-aos-delay="250">
               <h4 class="h6 mb-3">Working Mail</h4>
               <a href={`mailto:${config.params.email}`}>{config.params.email}</a
