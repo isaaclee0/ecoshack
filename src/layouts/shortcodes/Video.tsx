@@ -7,7 +7,7 @@ function Video({
   ...rest
 }: {
   title: string;
-  width: number;
+  width: number | string;
   height: number | "auto";
   src: string;
   [key: string]: any;
@@ -21,7 +21,7 @@ function Video({
       {...rest}
     >
       <source
-        src={src.match(/^http/) ? src : `/videos/${src}`}
+        src={src.match(/^(http|\/)/) ? src : `/videos/${src}`}
         type="video/mp4"
       />
       {title}
